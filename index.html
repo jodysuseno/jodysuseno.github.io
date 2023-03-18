@@ -38,13 +38,13 @@
                 <a href="#portfolio"
                   class="text-base font-bold text-black py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
               </li>
-              <li class="group list-none">
+              <!-- <li class="group list-none">
                 <a href="#experience"
                   class="text-base font-bold text-black py-2 mx-8 flex group-hover:text-primary">Experience</a>
-              </li>
-              <!-- <li class="group list-none">
-                <a href="#blog" class="text-base font-bold text-black py-2 mx-8 flex group-hover:text-primary">Blog</a>
               </li> -->
+              <li class="group list-none">
+                <a href="#blog" class="text-base font-bold text-black py-2 mx-8 flex group-hover:text-primary">Blog</a>
+              </li>
               <li class="group list-none">
                 <a href="#contact"
                   class="text-base font-bold text-black py-2 mx-8 flex group-hover:text-primary">Contact</a>
@@ -144,7 +144,46 @@
           </div>
         </div>
       </div>
-      <div class="w-full px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/3">
+          <h1 class="font-bold uppercase text-primary text-lg mb-3">Study</h1>
+          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md ">
+            <li>
+              <b>Universitas Muhammadiyah Malang (2018 - 2023)</b> <br>
+              S1 Teknik Informatika - IPK 3,74
+            </li>
+            <li>
+              <b>SMKN 1 SUKOREJO (2015 - 2018)</b> <br>
+              Rekayasa Perangkat Lunak
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4 mb-10 lg:w-1/3">
+          <h1 class="font-bold uppercase text-primary text-lg mb-3">Experience</h1>
+          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md">
+            <li>
+              <b>PT META MATA INDONESIA - Jakarta, Indonesia</b> <br>
+              Full Stack Developer - Intren (Maret 2022 - Juni 2022) <br>
+              <ul class="pl-5 mt-2 space-y-1 list-disc text-sm">
+                <li>Mengembangkan fitur payment gateway menggunakan midtrans untuk pemesanan tiket e-course dan event
+                  pada platform.</li>
+                <li>Redesign tampilan halaman pada platform website metamata.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full px-4 mb-10 lg:w-1/3">
+          <h1 class="font-bold uppercase text-primary text-lg mb-3">Certificate</h1>
+          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md">
+            <li>
+              <b>Belajar Dasar Pemrograman JavaScript, Dicoding Indonesia, 2022</b> <br>
+              <a href="dist/file/sertifikat_course_256_1300216_190722080031.pdf" target="_blank" class="text-primary">View Certificate</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="w-full">
         <div class=" mx-auto text-center mt-10 mb-10">
           <h4 class="font-bold uppercase text-primary text-lg mb-3">Skill</h4>
           <div class="flex items-center justify-center">
@@ -200,7 +239,7 @@
           <div class="rounded-md shadow_md overflow-hidden">
             <img src="dist/img/jodyspcbr.png" alt="Exapp">
           </div>
-          <h3 class="font-semibold text-xl text-black mt-5 mb-3">Expert System using Case Based Reasoning</h3>
+          <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Case Based Reasoning</h3>
           <!-- <p class="font-medium text-base text-secondary text-justify">
             Sistem Pakar berbasis web memungkinkan pakar untuk melakukan diagnosa penyakit terhadap pasien apapun secara
             fleksibel dan diproses mengunakan metode Case Based Reasoning sehingga menghasilkan hasil pakar yang terbaik.
@@ -210,7 +249,7 @@
           <div class="rounded-md shadow_md overflow-hidden">
             <img src="dist/img/jodyspcf.png" alt="Exapp">
           </div>
-          <h3 class="font-semibold text-xl text-black mt-5 mb-3">Expert System using Certainty Factor</h3>
+          <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Certainty Factor</h3>
           <!-- <p class="font-medium text-base text-secondary text-justify">
             Sistem Pakar berbasis web memungkinkan pakar untuk melakukan diagnosa penyakit terhadap pasien apapun secara
             fleksibel dan diproses mengunakan metode Certainty Factor sehingga menghasilkan hasil pakar yang terbaik.
@@ -220,7 +259,7 @@
           <div class="rounded-md shadow_md overflow-hidden">
             <img src="dist/img/jodyspbayes.png" alt="Exapp">
           </div>
-          <h3 class="font-semibold text-xl text-black mt-5 mb-3">Expert System using Bayes</h3>
+          <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Bayes</h3>
           <!-- <p class="font-medium text-base text-secondary text-justify">
             Sistem Pakar berbasis web memungkinkan pakar untuk melakaukan diagnosa penyakit terhadap pasien dan diproses
             mengunakan metode Bayes sehingga menghasilkan hasil pakar yang terbaik.
@@ -230,7 +269,7 @@
           <div class="rounded-md shadow_md overflow-hidden">
             <img src="dist/img/jodyspksaw.png" alt="Exapp">
           </div>
-          <h3 class="font-semibold text-xl text-black mt-5 mb-3">Decision Support System using SAW</h3>
+          <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Decision Support System using SAW</h3>
           <!-- <p class="font-medium text-base text-secondary text-justify">
             Sistem Pendukung Keputusan berbasis web memungkinkan user untuk menentukan suatu hal terhadap alternatif
             yang ada secara fleksibel menggunakan metode simple additive weighting (SAW) sehingga menghasilkan hasil
@@ -242,90 +281,62 @@
   </section>
   <!-- portfolio section end -->
 
-  <!-- experience section start -->
-  <section id="experience" class="pt-36 pb-32 bg-slate-700">
+  <!-- blog section start -->
+  <section id="blog" class="pt-36 pb-32 bg-slate-700">
     <div class="container">
       <div class="w-full px-4">
         <div class="mx-auto text-center mb-16">
-          <h4 class="font-semibold text-3xl text-primary mb-2">Experience</h4>
+          <h4 class="font-semibold text-3xl text-primary mb-2">Blog</h4>
           <!-- <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">yang Pernah Bekerja Sama</h2> -->
           <!-- <p class="font-medium text-md text-slate-300 md:test-lg">
-            The following is the experience, study, and certification that I got during my career as a web developer
+            The following is the blog, study, and certification that I got during my career as a web developer
           </p> -->
-        </div>
-      </div>
-      <div class="flex flex-wrap">
-        <div class="w-full px-4 mb-10 lg:w-1/3">
-          <h1 class="font-bold uppercase text-primary text-lg mb-3">Study</h1>
-          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md ">
-            <li>
-              <b>Universitas Muhammadiyah Malang (2018 - 2023)</b> <br>
-              S1 Teknik Informatika - IPK 3,74
-            </li>
-            <li>
-              <b>SMKN 1 SUKOREJO (2015 - 2018)</b> <br>
-              Rekayasa Perangkat Lunak
-            </li>
-          </ul>
-        </div>
-        <div class="w-full px-4 mb-10 lg:w-1/3">
-          <h1 class="font-bold uppercase text-primary text-lg mb-3">Experience</h1>
-          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md">
-            <li>
-              <b>PT META MATA INDONESIA - Jakarta, Indonesia</b> <br>
-              Full Stack Developer - Intren (Maret 2022 - Juni 2022) <br>
-              <ul class="pl-5 mt-2 space-y-1 list-disc text-sm">
-                <li>Mengembangkan fitur payment gateway menggunakan midtrans untuk pemesanan tiket e-course dan event
-                  pada platform.</li>
-                <li>Redesign tampilan halaman pada platform website metamata.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="w-full px-4 mb-10 lg:w-1/3">
-          <h1 class="font-bold uppercase text-primary text-lg mb-3">Certificate</h1>
-          <ul class="list-disc font-medium text-base text-white max-w-xl lg:text-md">
-            <li>
-              <b>Belajar Dasar Pemrograman JavaScript, Dicoding Indonesia, 2022</b> <br>
-              <a href="dist/file/sertifikat_course_256_1300216_190722080031.pdf" target="_blank" class="text-primary">View Certificate</a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- experience section end -->
-
-  <!-- blog section start -->
-  <!-- <section id="blog" class="pt-36 pb-32 bg-slate-100">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-          <h2 class="font-bold text-black text-3xl mb-4">Tulisan Terkini</h2>
-          <p class="font-medium text-md text-secondary">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam reiciendis, soluta aliquam autem quaerat sit
-            deserunt perspiciatis quisquam dicta est veniam corporis, repudiandae eligendi ratione nisi ipsum ipsam esse
-            distinctio.
-          </p>
         </div>
       </div>
       <div class="flex flex-wrap">
         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-            <img src="https://source.unsplash.com/360x200?programming" alt="Programing" class="w-full" />
+            <img src="dist/img/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="Programing" class="w-full h-60" />
             <div class="py-8 px-6">
               <h3>
-                <a href="" class="block mb-3 font-semibold test-xl text-black hover:text-primary truncate">learn Pryhon
-                  for Data Science</a>
+                <a href="" class="block mb-3 font-semibold test-xl text-black hover:text-primary truncate">Masa Depan Data Science: Tren dan Tantangan di Era Digital</a>
               </h3>
-              <p class="font-medium text-base text-secondary mb-6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga maxime vero reiciendis nulla magnam vitae
-                voluptas quaerat quae iusto ipsum dicta provident at quo laboriosam, nobis repudiandae molestiae
-                asperiores praesentium!
+              <p class="font-medium text-base text-secondary text-justify mb-6">
+                Data Science merupakan bidang yang kian berkembang di era digital ini. Bidang ini menggunakan teknik analisis data untuk mengekstraksi…
               </p>
-              <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+              <a href="https://medium.com/@jodysuseno/masa-depan-data-science-tren-dan-tantangan-di-era-digital-3c32d9d62389" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                Baca Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <img src="dist/img/ben-griffiths-4wxWBy8Jo1I-unsplash.jpg" alt="Programing" class="w-full h-60" />
+            <div class="py-8 px-6">
+              <h3>
+                <a href="" class="block mb-3 font-semibold test-xl text-black hover:text-primary truncate">Masa depan PHP</a>
+              </h3>
+              <p class="font-medium text-base text-secondary text-justify mb-6">
+                PHP adalah bahasa pemrograman yang telah lama digunakan dan populer di kalangan developer web. Bahasa pemrograman ini memungkinkan…
+              </p>
+              <a href="https://medium.com/@jodysuseno/masa-depan-php-9fce744c114a" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
+                Baca Selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+            <img src="dist/img/mohammad-rahmani-oXlXu2qukGE-unsplash.jpg" alt="Programing" class="w-full h-60" />
+            <div class="py-8 px-6">
+              <h3>
+                <a href="" class="block mb-3 font-semibold test-xl text-black hover:text-primary truncate">Laravel 10: Framework PHP yang Semakin Matang</a>
+              </h3>
+              <p class="font-medium text-base text-secondary text-justify mb-6">
+                Laravel 10 adalah versi terbaru dari framework PHP populer yang sudah dikenal luas di kalangan developer, khususnya di Indonesia. Framework…
+              </p>
+              <a href="https://medium.com/@jodysuseno/laravel-10-framework-php-yang-semakin-matang-3f6924d682e8" target="_blank" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
                 Baca Selengkapnya
               </a>
             </div>
@@ -333,7 +344,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- blog section end -->
 
   <!-- contact section start -->
@@ -440,9 +451,9 @@
             <li>
               <a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Porfolio</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#experience" class="inline-block text-base hover:text-primary mb-3">experience</a>
-            </li>
+            </li> -->
             <li>
               <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
             </li>
