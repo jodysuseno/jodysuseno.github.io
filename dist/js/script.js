@@ -23,5 +23,5 @@ hamburger.addEventListener('click', function () {
 // modal popup
 function toggleModal(id) {
   document.getElementById('modal' + id).classList.toggle('hidden');
-  console.log('test');
+  console.log('open modal');
 }
