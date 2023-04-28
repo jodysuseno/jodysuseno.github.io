@@ -263,56 +263,245 @@
           </p> -->
         </div>
       </div>
-
       <div class="w-full px-4 flex flex-wrap justif-center xl:w-10/12 xl:mx-auto">
         <div class="mb-12 p-4 md:w-1/2">
-          <a href="https://youtu.be/LFiFx81Z1lc" target="_blank">
-            <div class="rounded-md shadow_md overflow-hidden">
-              <img src="dist/img/jodyspcbr.png" alt="Exapp">
-            </div>
-          </a>
+          <div class="rounded-md shadow_md overflow-hidden cursor-pointer" id="button-modal" onclick="openModal(4)">
+            <img src="dist/img/jodyspcbr.png" alt="Exapp">
+          </div>
           <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Case Based Reasoning
             Method
           </h3>
         </div>
+        <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="portfolioModal4">
+          <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+            <!-- Latar belakang hitam -->
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+              <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+
+            <!-- Konten Modal -->
+            <div
+              class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all max-w-4xl md:max-w-6xl sm:my-24 sm:align-middle sm:w-full"
+              role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+
+              <!-- Judul Modal -->
+              <div class="bg-primary px-4 py-3 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-white" id="modal-headline">
+                  Expert System using Case Based Reasoning Method
+                </h3>
+              </div>
+
+              <!-- Konten Video dan Paragraf -->
+              <div class="px-4 py-5 sm:p-6">
+                <div class="mb-4">
+                  <!-- Video -->
+                  <div class="relative h-0" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/LFiFx81Z1lc"
+                      frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div>
+                  <!-- Paragraf -->
+                  <p class="text-gray-700">
+                    Sistem pakar berbasis web yang menggunakan metode CBR (Case-Based Reasoning) dan dibangun dengan
+                    framework Laravel, Bootstrap, dan database MySQL. Aplikasi ini dapat membantu pengguna dalam
+                    mengidentifikasi masalah dan memberikan solusi berdasarkan kasus-kasus yang telah terjadi
+                    sebelumnya. Metode CBR digunakan untuk memproses informasi yang diberikan pengguna dan
+                    mencocokkannya dengan kasus-kasus yang telah terjadi sebelumnya. Dengan demikian, aplikasi ini dapat
+                    memberikan solusi yang lebih akurat dan efektif.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tombol Tutup -->
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  class="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  id="close-modal5" onclick="closeModal(4)">
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="mb-12 p-4 md:w-1/2">
-          <a href="https://youtu.be/xSUXDOVXnpI" target="_blank">
-          <div class="rounded-md shadow_md overflow-hidden">
+          <div class="rounded-md shadow_md overflow-hidden cursor-pointer" onclick="openModal(3)">
             <img src="dist/img/jodyspcf.png" alt="Exapp">
           </div>
-          </a>
           <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Certainty Factor Method
           </h3>
-          <!-- <p class="font-medium text-base text-secondary text-justify">
-            Sistem Pakar berbasis web memungkinkan pakar untuk melakukan diagnosa penyakit terhadap pasien apapun secara
-            fleksibel dan diproses mengunakan metode Certainty Factor sehingga menghasilkan hasil pakar yang terbaik.
-          </p> -->
+        </div>
+        <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="portfolioModal3">
+          <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+            <!-- Latar belakang hitam -->
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+              <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+
+            <!-- Konten Modal -->
+            <div
+              class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all max-w-4xl md:max-w-6xl sm:my-24 sm:align-middle sm:w-full"
+              role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+
+              <!-- Judul Modal -->
+              <div class="bg-primary px-4 py-3 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-white" id="modal-headline">
+                  Expert System using Certainty Factor Method
+                </h3>
+              </div>
+
+              <!-- Konten Video dan Paragraf -->
+              <div class="px-4 py-5 sm:p-6">
+                <div class="mb-4">
+                  <!-- Video -->
+                  <div class="relative h-0" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/xSUXDOVXnpI"
+                      frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div>
+                  <!-- Paragraf -->
+                  <p class="text-gray-700">
+                    Sistem pakar berbasis web ini menggunakan metode certainty factor untuk memperkirakan kepastian
+                    jawaban. Metode ini menggabungkan beberapa aturan untuk memberikan rekomendasi yang lebih akurat,
+                    dan pengguna dapat berinteraksi dengan sistem melalui antarmuka web yang mudah digunakan. Sistem
+                    pakar ini dibangun menggunakan Laravel sebagai framework utama, Bootstrap untuk tampilan front-end
+                    yang responsif, dan MySQL sebagai database. Fitur administrasi memudahkan pengelolaan pengetahuan,
+                    seperti penambahan, pengeditan, dan penghapusan pengetahuan.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tombol Tutup -->
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  class="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  id="close-modal5" onclick="closeModal(3)">
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="mb-12 p-4 md:w-1/2">
-          <a href="https://youtu.be/-XVdtOQCgiU" target="_blank">
-          <div class="rounded-md shadow_md overflow-hidden">
+          <div class="rounded-md shadow_md overflow-hidden cursor-pointer" onclick="openModal(2)">
             <img src="dist/img/jodyspbayes.png" alt="Exapp">
           </div>
-          </a>
           <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Expert System using Bayes Method</h3>
-          <!-- <p class="font-medium text-base text-secondary text-justify">
-            Sistem Pakar berbasis web memungkinkan pakar untuk melakaukan diagnosa penyakit terhadap pasien dan diproses
-            mengunakan metode Bayes sehingga menghasilkan hasil pakar yang terbaik.
-          </p> -->
+        </div>
+        <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="portfolioModal2">
+          <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+            <!-- Latar belakang hitam -->
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+              <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+
+            <!-- Konten Modal -->
+            <div
+              class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all max-w-4xl md:max-w-6xl sm:my-24 sm:align-middle sm:w-full"
+              role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+
+              <!-- Judul Modal -->
+              <div class="bg-primary px-4 py-3 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-white" id="modal-headline">
+                  Expert System using Bayes Method
+                </h3>
+              </div>
+
+              <!-- Konten Video dan Paragraf -->
+              <div class="px-4 py-5 sm:p-6">
+                <div class="mb-4">
+                  <!-- Video -->
+                  <div class="relative h-0" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/-XVdtOQCgiU"
+                      frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div>
+                  <!-- Paragraf -->
+                  <p class="text-gray-700">
+                    Sistem pakar berbasis web ini dibangun dengan menggunakan metode Bayes untuk memberikan rekomendasi
+                    solusi yang akurat berdasarkan informasi yang tersedia. Pengguna dapat berinteraksi dengan sistem
+                    melalui antarmuka web yang dibangun dengan framework Bootstrap dan bahasa pemrograman PHP, sedangkan
+                    data disimpan di dalam database MySQL. Sistem pakar ini juga dilengkapi dengan fitur administrasi
+                    yang memudahkan pengelolaan pengetahuan yang tersimpan di dalamnya.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tombol Tutup -->
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  class="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  id="close-modal5" onclick="closeModal(2)">
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="mb-12 p-4 md:w-1/2">
-          <a href="https://youtu.be/1XKmU2kM0jA" target="_blank">
-          <div class="rounded-md shadow_md overflow-hidden">
+          <div class="rounded-md shadow_md overflow-hidden cursor-pointer" onclick="openModal(1)">
             <img src="dist/img/jodyspksaw.png" alt="Dcsapp">
           </div>
-          </a>
           <h3 class="font-semibold text-xl text-black text-center mt-5 mb-3">Decision Support System using SAW Method
           </h3>
-          <!-- <p class="font-medium text-base text-secondary text-justify">
-            Sistem Pendukung Keputusan berbasis web memungkinkan user untuk menentukan suatu hal terhadap alternatif
-            yang ada secara fleksibel menggunakan metode simple additive weighting (SAW) sehingga menghasilkan hasil
-            keputusan terbaik.
-          </p> -->
+        </div>
+        <div class="fixed z-10 inset-0 overflow-y-auto hidden" id="portfolioModal1">
+          <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+            <!-- Latar belakang hitam -->
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+              <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+
+            <!-- Konten Modal -->
+            <div
+              class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all max-w-4xl md:max-w-6xl sm:my-24 sm:align-middle sm:w-full"
+              role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+
+              <!-- Judul Modal -->
+              <div class="bg-primary px-4 py-3 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-white" id="modal-headline">
+                  Decision Support System using SAW Method
+                </h3>
+              </div>
+
+              <!-- Konten Video dan Paragraf -->
+              <div class="px-4 py-5 sm:p-6">
+                <div class="mb-4">
+                  <!-- Video -->
+                  <div class="relative h-0" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/1XKmU2kM0jA"
+                      frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div>
+                  <!-- Paragraf -->
+                  <p class="text-gray-700">
+                    Sistem pendukung keputusan ini dibangun dengan metode Simple Additive Weighting (SAW) untuk membantu
+                    pengguna dalam memilih alternatif terbaik berdasarkan kriteria yang telah ditentukan. Sistem ini
+                    berbasis web dan menggunakan framework Bootstrap serta bahasa pemrograman PHP, sedangkan data
+                    disimpan di dalam database MySQL. Fitur administrasi memudahkan pengelolaan kriteria dan alternatif
+                    yang tersimpan di dalam sistem. Dengan sistem pendukung keputusan ini, pengguna dapat membuat
+                    keputusan yang lebih tepat dan efektif.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tombol Tutup -->
+              <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  class="mt-3 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                  id="close-modal5" onclick="closeModal(1)">
+                  Tutup
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

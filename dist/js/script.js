@@ -25,3 +25,17 @@ function toggleModal(id) {
   document.getElementById('modal' + id).classList.toggle('hidden');
   console.log('open modal');
 }
+
+
+// Ambil elemen-elemen yang diperlukan
+function openModal(id) {
+  const modal = document.querySelector('#portfolioModal' + id);
+  modal.classList.remove('hidden');
+
+}
+
+function closeModal(id) {
+  const modal = document.querySelector('#portfolioModal' + id);
+  modal.classList.add('hidden');
+
+}
