@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HPF</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/fontawesome.com_releases_v6.3.0_js_all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        .bg-primary-custom {
+            background-color: #c32227 !important;
+        }
+
+        .bg-secondary-custom {
+            background-color: #ffc60a !important;
+        }
+
+        .font-league-spartan {
+            font-family: 'League Spartan', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+
+        @font-face
+
+        /*perintah untuk memanggil font eksternal*/
+            {
+            font-family: 'Proxima Nova';
+            /*memberikan nama bebas untuk font*/
+            src: url('font/Proxima_Nova_Font.otf');
+            /*memanggil file font eksternalnya di folder nexa*/
+        }
+
+        .font-proxima-font {
+            font-family: 'Proxima Nova';
+        }
+
+        .btn-rounded-full {
+            border-radius: 100px;
+        }
+
+        /* Add styles for the blurred overlay */
+        .blur-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 2;
+            /* Ensure overlay is below navbar */
+        }
+
+        /* Add styles for dropdown animation */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        /* .nav-item .nav-link {
+        } */
+
+        /* #navAllMenu{
+            margin: 0px !important;
+        }
+
+        .text-link-navbar{
+            padding-left: 50% !important;
+            padding-right: 50% !important;
+        } */
+
+        
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Full-width dropdown */
+        .dropdown-menu .full-width {
+            min-width: 100%;
+            left: 0 !important;
+            right: auto !important;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* .navbar .megamenu {
+            padding: 1rem;
+            margin-top: 0px;
+        } */
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        /* ============ desktop view .end// ============ */
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px) {
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+            
+        }
+
+        #navAllMenu {
+            /* margin: 0% !important; */
+            align-items: center;
+        }
+
+        .text-link-navbar {
+            padding-left: 20% !important;
+            padding-right: 20% !important;
+        }
+
+        @media (min-width: 576px) { 
+            
+        }
+
+        @media (min-width: 768px) { 
+            .text-link-navbar {
+                padding-left: 5% !important;
+                padding-right: 5% !important;
+            }
+            #navAllMenu {
+                margin-left: 10% !important;
+                margin-right: 10% !important;
+                /* align-items: center; */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .text-link-navbar {
+                padding-left: 3% !important;
+                padding-right: 3% !important;
+            }
+            #navAllMenu {
+                margin-left: 15% !important;
+                margin-right: 15% !important;
+                /* align-items: center; */
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .text-link-navbar {
+                padding-left: 10% !important;
+                padding-right: 10% !important;
+            }
+            #navAllMenu {
+                margin-left: 13% !important;
+                margin-right: 13% !important;
+                /* align-items: center; */
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .text-link-navbar {
+                padding-left: 15% !important;
+                padding-right: 15% !important;
+            }
+            
+        }
+    </style>
+</head>
+
+<header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg bg-primary-custom navbar-dark text-white fixed-top shadow-sm py-0 z-3">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand pl-5 py-2" href="">
+                <img src="image/logo_image/new_logo_hpf.png" height="50px" alt="hpf">
+            </a>
+            <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                </ul> -->
+                <ul class="navbar-nav mx-auto d-flex my-2 my-lg-0" id="navAllMenu">
+                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
+                            data-bs-toggle="dropdown">WHITEBOARD</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    INTERACTIVE WHITEBOARD
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Interactive Whiteboard Web Series
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Interactive Whiteboard Edu Series
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Whiteboard Accessories
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
+                            data-bs-toggle="dropdown">DISPLAY</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    DISPLAY
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Digital Poster
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Multimedia Kiosk
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Wallmount
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        GOB
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Videowall
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Display
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
+                            data-bs-toggle="dropdown">VIDEOTRON</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    VIDEOTRON
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Videotron Display Indoor
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Videotron Display Outdoor
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Videotron Display
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
+                            data-bs-toggle="dropdown">WEBCAM</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    WEBCAM
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Web Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Meeting Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Conference Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Camera
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white" href="#" data-bs-toggle="dropdown"><i
+                                class="fa fa-search"></i> </a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
+                            <div class="container">
+                                <div class="my-5">
+                                    <input type="text" class="form-control form-control-lg" name="" id=""
+                                        aria-describedby="helpId" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Blurred Overlay -->
+    <div class="blur-overlay" id="blurOverlay"></div>
+    <main>
+        <section id="banner" style="margin-top: 18px !important;">
+            <img class="img-fluid mt-5" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png" alt="">
+        </section>
+        <section id="product" class="bg-light">
+            <div class="container py-5">
+                <h1 class="text-center my-5 px-3 font-proxima-font"><strong>LCD Interactive Whiteboard Web
+                        Series</strong></h1>
+                <div class="row justify-content-center align-items-top my-5">
+                    <div class="col-md-6 col-lg-4 px-4 py-4 m-0">
+                        <div class="text-center">
+                            <img width="80%" class="rounded mx-auto d-block"
+                                src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
+                                alt="IWB">
+                            <h4 class="text-center my-5">55"</h4>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Icon OS.jpg" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">Dual OS Android & Windows</h5>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Processor i3.png" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">Octa Core Cortex A73 & Intel Core i3</h5>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/RAM.png" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">4GB & 8GB DDR4</h5>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Storage.png" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">32GB & 256GB SSD</h5>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Speaker.png" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">Stereo Speaker 15Wx2</h5>
+                            <hr>
+                        </div>
+
+                        <div class="d-grid gap-3 mt-5">
+                            <button type="button" name="" id=""
+                                class="btn bg-secondary-custom btn-warning btn-lg my-1 mx-5"><i
+                                    class="fa fa-comment"></i> Contact to Buy</button>
+                            <button type="button" name="" id=""
+                                class="btn btn-light btn-outline-secondary btn-lg my-1 mx-5"><i
+                                    class="fa fa-file-invoice"></i> Download Brochure</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 px-4 py-4 m-0">
+                        <div class="text-center">
+                            <img width="80%" class="rounded mx-auto d-block"
+                                src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
+                                alt="IWB">
+                            <h4 class="text-center my-5">65"</h4>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Icon OS.jpg" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">Dual OS Android & Windows</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Processor i5.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">Octa Core Cortex A73 & Intel Core i5</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/RAM.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">4GB & 8GB DDR4</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Storage.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">32GB & 256GB SSD</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Speaker.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">Stereo Speaker 15Wx2</h5>
+                        <hr>
+
+                        <div class="d-grid gap-3 mt-5">
+                            <button type="button" name="" id=""
+                                class="btn bg-secondary-custom btn-warning btn-lg my-1 mx-5"><i
+                                    class="fa fa-comment"></i> Contact to Buy</button>
+                            <button type="button" name="" id=""
+                                class="btn btn-light btn-outline-secondary btn-lg my-1 mx-5"><i
+                                    class="fa fa-file-invoice"></i> Download Brochure</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 px-4 py-4 m-0">
+                        <div class="text-center">
+                            <img width="80%" class="rounded mx-auto d-block"
+                                src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
+                                alt="IWB">
+                            <h4 class="text-center my-5">75"</h4>
+                            <hr>
+                        </div>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Icon OS.jpg" class="py-0" alt="">
+                            <h5 class="text-center my-3 font-league-spartan pt-3">Dual OS Android & Windows</h5>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Processor i5.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">Octa Core Cortex A73 & Intel Core i5</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/RAM.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">4GB & 8GB DDR4</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Storage.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">32GB & 256GB SSD</h5>
+                        <hr>
+                        <div class="text-center">
+                            <img width="85%" src="image/feature_image/Speaker.png" class="py-0" alt="">
+                        </div>
+                        <h5 class="text-center my-3 font-league-spartan pt-3">Stereo Speaker 15Wx2</h5>
+                        <hr>
+
+                        <div class="d-grid gap-3 mt-5">
+                            <button type="button" name="" id=""
+                                class="btn bg-secondary-custom btn-warning btn-lg my-1 mx-5"><i
+                                    class="fa fa-comment"></i> Contact to Buy</button>
+                            <button type="button" name="" id=""
+                                class="btn btn-light btn-outline-secondary btn-lg my-1 mx-5"><i
+                                    class="fa fa-file-invoice"></i> Download Brochure</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+        </script>
+
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navAllMenu").hover(function () {
+                blurOverlay.style.display = 'block';
+                setTimeout(() => {
+                    blurOverlay.style.opacity = '1';
+                }, 10);
+            }, function () {
+                blurOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    blurOverlay.style.display = 'none';
+                }, 300);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#navbarNavHover").hover(function () {
+                document.getElementById('.carousel-hover').style.display = 'none';
+            }, function () {
+                document.getElementById('.carousel-hover').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+
+
+<footer class="mt-auto py-3 bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark text-white shadow-sm py-0">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand pl-5 py-0" href="">
+                <img src="image/logo_image/new_logo_hpf.png" height="50px" alt="hpf">
+            </a>
+            <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleFooterId" aria-controls="collapsibleFooterId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleFooterId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                </ul>
+                <ul class="navbar-nav d-flex my-2 my-lg-0" id="navAllMenu">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                            aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                            aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+</html>

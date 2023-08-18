@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HPF</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/fontawesome.com_releases_v6.3.0_js_all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        .bg-primary-custom {
+            background-color: #c32227 !important;
+        }
+
+        .bg-secondary-custom {
+            background-color: #ffc60a !important;
+        }
+
+        .font-league-spartan {
+            font-family: 'League Spartan', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+
+        .bg-section-secondary {
+            background-color: rgb(241, 241, 241);
+        }
+
+        @font-face
+
+        /*perintah untuk memanggil font eksternal*/
+            {
+            font-family: 'Proxima Nova';
+            /*memberikan nama bebas untuk font*/
+            src: url('font/Proxima_Nova_Font.otf');
+            /*memanggil file font eksternalnya di folder nexa*/
+        }
+
+        .font-proxima-font {
+            font-family: 'Proxima Nova';
+        }
+
+        .btn-rounded-full {
+            border-radius: 100px;
+        }
+
+        /* Add styles for the blurred overlay */
+        .blur-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 2;
+            /* Ensure overlay is below navbar */
+        }
+
+        /* Add styles for dropdown animation */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Full-width dropdown */
+        .dropdown-menu .full-width {
+            min-width: 100%;
+            left: 0 !important;
+            right: auto !important;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* .navbar .megamenu {
+            padding: 1rem;
+            margin-top: 0px;
+        } */
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        /* ============ desktop view .end// ============ */
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px) {
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg bg-primary-custom navbar-dark text-white fixed-top shadow-sm py-0 z-3">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand pl-5 py-2" href="">
+                <img src="image/logo_image/new_logo_hpf.png" height="50px" alt="hpf">
+            </a>
+            <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                </ul>
+                <ul class="navbar-nav mx-auto d-flex my-2 my-lg-0" id="navAllMenu">
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#IWB">WHITEBOARD</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-4">
+                                    INTERACTIVE WHITEBOARD
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Interactive Whiteboard Web Series
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Interactive Whiteboard Edu Series
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Whiteboard Accessories
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#WEBCAM">DISPLAY</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    DISPLAY
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Video Wall
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Multimedia Kiosk
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Digital Poster
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Wallmount
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        GOB Display
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Display
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#DISPLAY">VIDEOTRON</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    VIDEOTRON
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Videotron Display Indoor
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Videotron Display Outdoor
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Videotron Display
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#SIGNAGE">WEBCAM</a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <div class="container">
+                                <p class="lead fst-italic fs-3">
+                                    WEBCAM
+                                </p>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Web Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Meeting Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Conference Camera
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Accessories Camera
+                                    </a>
+                                </h5>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white" href="#"><i class="fa fa-search"></i>
+                        </a>
+                        <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
+                            <div class="container">
+                                <div class="my-5">
+                                    <input type="text" class="form-control form-control-lg" name="" id=""
+                                        aria-describedby="helpId" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div> <!-- dropdown-mega-menu.// -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Blurred Overlay -->
+    <div class="blur-overlay" id="blurOverlay"></div>
+
+    <main>
+        <section id="banner" style="margin-top: 18px !important;">
+            <img class="img-fluid mt-5" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png" alt="">
+        </section>
+        <section id="description" class="bg-light">
+            <div class="container py-5">
+                <p class="font-proxima-font text-center fs-4 py-5">
+                    Meticulously crafted to cater to the ever-evolving demands of contemporary communication, elevate
+                    your collaborative experiences with our finest audio-visual equipment solutions.
+                    <!-- <strong>PT. SinarOzora Lestari</strong> is a leading provider of audio-visual equipment solution
+                    serving education and business sector. We offer a comperhensive range of product designed to
+                    facilitate remote interaction snd collaborations, empowering educational instutions and companies.
+                    In this context, we profice complete audio-visual equipment, including LCD Interactive Whiteboard,
+                    Web Camera. LCD Digital Signage, and LED Screens Indoor & Outdoor. -->
+                </p>
+            </div>
+        </section>
+        <section id="IWB" class="bg-section-secondary">
+            <div class="container">
+                <div class="row py-3 align-items-center">
+                    <div class="col-lg-6 py-5">
+                        <h3 class="align-self-center font-proxima-font text-start"><strong>LCD Interactive
+                                Whiteboard</strong></h3>
+                        <p class="align-self-center font-proxima-font text-start fs-4 mb-5">
+                            Harness the captivating multi-touch brilliance of our interactive touch screen whiteboards.
+                            Our answer to all your collaboration and brainstorming needs.
+                        </p>
+                        <div class="row align-self-center">
+                            <div class="d-grid col-4 p-2">
+                                <button class="btn bg-secondary-custom bg-warning"><strong>EDU Series</strong></button>
+                            </div>
+                            <div class="d-grid col-4 p-2">
+                                <button class="btn bg-secondary-custom bg-warning"><strong>Web Series</strong></button>
+                            </div>
+                            <div class="d-grid col-4 p-2">
+                                <!-- <button class="btn bg-secondary-custom bg-warning"><strong>EDU Series</strong></button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-5 d-flex justify-content-center">
+                        <img src="image/category_image/IMG iwb dual OS.png"
+                            class="img-fluid p-2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="WEBCAM" class="bg-light">
+            <div class="container">
+                <div class="row py-3 align-items-center">
+                    <div class="col-lg-5 py-5 d-flex justify-content-center">
+                        <img src="image/category_image/web-camera-72pAe-1691461649.png" class="img-fluid p-2" alt="">
+                    </div>
+                    <div class="col-lg-7 py-5">
+                        <h3 class="font-proxima-font text-start"><strong>Web Camera</strong></h3>
+                        <p class="font-proxima-font text-start fs-4 mb-5">
+                            Elevate your video conferences and meetings with our multifunctional cameras, one frame at a
+                            time.
+                        </p>
+                        <div class="row">
+                            <div class="d-grid col-4 p-2">
+                                <button
+                                    class="btn bg-secondary-custom bg-warning"><strong>Web&nbsp;Camera</strong></button>
+                            </div>
+                            <div class="d-grid col-4 p-2">
+                                <button
+                                    class="btn bg-secondary-custom bg-warning"><strong>Meeting&nbsp;Camera</strong></button>
+                            </div>
+                            <div class="d-grid col-4 p-2">
+                                <button
+                                    class="btn bg-secondary-custom bg-warning"><strong>Confecence&nbsp;Camera</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="DISPLAY" class="bg-section-secondary">
+            <div class="container">
+                <div class="row py-3 align-items-center">
+                    <div class="col-lg-6 py-5">
+                        <h3 class="font-proxima-font text-start"><strong>LED Screen Indoor & Outdoor</strong></h3>
+                        <p class="font-proxima-font text-start fs-4 mb-5">
+                            Illuminate grand events, set concerts ablaze, and command attention wherever you are with
+                            our LED Indoor and Outdoor Screens.
+                        </p>
+                        <div class="row">
+                            <div class="d-grid col-4 p-2">
+                                <button class="btn bg-secondary-custom bg-warning"><strong>Indoor</strong></button>
+                            </div>
+                            <div class="d-grid col-4 p-2">
+                                <button class="btn bg-secondary-custom bg-warning"><strong>Outdoor</strong></button>
+                            </div>
+                            <!-- <div class="d-grid col-4 p-2"> -->
+                            <!-- <button class="btn bg-secondary-custom bg-warning"><strong>EDU Series</strong></button> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 py-5 d-flex justify-content-center">
+                        <img src="image/category_image/Videotron indoor.png" class="img-fluid p-2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="SIGNAGE" class="bg-light">
+            <div class="container py-5 ">
+                <div class="row py-5 my-5 align-items-center">
+                    <h3 class="font-proxima-font text-center"><strong>Digital Signage</strong></h3>
+                    <p class="font-proxima-font text-center fs-4 mb-5">
+                        Elevate your marketing. Transform public spaces into interactive hubs for promotions and
+                        information sharing. Illuminate your message with our Digital Signages – Captivate your
+                        audience.
+                    </p>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/lcd-video-wall-pnN1C-1691461352.png" class="img-fluid"
+                                    alt="">
+                                <h6>Video&nbsp;Wall</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/i01_untitled-1.png" class="img-fluid" alt="">
+                                <h6>Multimedia&nbsp;Kiosk</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/digital-poster-signage-screen-Pphc8-1691461401.png"
+                                    class="img-fluid" alt="">
+                                <h6>Digital&nbsp;Poster</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/wallmount.png" class="img-fluid" alt="">
+                                <h6>Wallmounted</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/Double sided round LED Sign.png" class="img-fluid"
+                                    alt="">
+                                <h6>Double&nbsp;Sided&nbsp;Round</h6>
+                            </a>
+                        </div>
+                        <!-- <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <img src="image/category_image/GOB.png" class="img-fluid" alt="" style="left: 1000px !important; position: relative !important;">
+                                <h6>GOB&nbsp;Digital&nbsp;Poster</h6>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous">
+        </script>
+
+    <script src="js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navAllMenu").hover(function () {
+                blurOverlay.style.display = 'block';
+                setTimeout(() => {
+                    blurOverlay.style.opacity = '1';
+                }, 10);
+            }, function () {
+                blurOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    blurOverlay.style.display = 'none';
+                }, 300);
+            });
+
+            $("#navbarNavHover").hover(function () {
+                document.getElementById('.carousel-hover').style.display = 'none';
+            }, function () {
+                document.getElementById('.carousel-hover').style.display = 'block';
+            });
+
+            $('.img-fluid').removeAttr('style');
+        });
+    </script>
+</body>
+
+
+<footer class="mt-auto py-3 bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark text-white shadow-sm py-0">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand pl-5 py-0" href="">
+                <img src="image/logo_image/new_logo_hpf.png" height="50px" alt="hpf">
+            </a>
+            <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleFooterId" aria-controls="collapsibleFooterId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleFooterId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                </ul>
+                <ul class="navbar-nav d-flex my-2 my-lg-0" id="navAllMenu">
+                    <li class="nav-item">
+                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                            aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                            aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+</html>

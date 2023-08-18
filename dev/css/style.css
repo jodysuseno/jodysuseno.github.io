@@ -1,0 +1,79 @@
+.navbar-nav .dropdown {
+  position: relative;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  animation: fadeOut 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination .page-item a {
+  color: #080808;
+  border-color: #b51930; 
+}
+
+.pagination .active .page-link {
+  background-color: #b51930; 
+  border-color: #b51930 ; 
+}
+
+.pagination .active a {
+  background-color: #b51930; 
+  border-color: #b51930 ; 
+}
+.pagination .disabled {
+  border-color: #b51930 ; 
+}
+.pagination .disabled .page-link{
+  border-color: #b51930 ; 
+}
+
+.bg_primary_custom{
+  background-color: #b51930 !important;
+}
+.text_primary_custom{
+  color: #b51930 !important;
+}
+.nav .active{
+  background-color: #ca233c;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
