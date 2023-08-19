@@ -87,7 +87,7 @@
             padding-right: 50% !important;
         } */
 
-        
+
 
         @keyframes fadeIn {
             0% {
@@ -160,65 +160,33 @@
                 margin-top: 0;
             }
 
-            
-        }
 
-        #navAllMenu {
-            /* margin: 0% !important; */
-            align-items: center;
-        }
-
-        .text-link-navbar {
-            padding-left: 20% !important;
-            padding-right: 20% !important;
-        }
-
-        @media (min-width: 576px) { 
-            
-        }
-
-        @media (min-width: 768px) { 
-            .text-link-navbar {
-                padding-left: 5% !important;
-                padding-right: 5% !important;
-            }
-            #navAllMenu {
-                margin-left: 10% !important;
-                margin-right: 10% !important;
-                /* align-items: center; */
-            }
         }
 
         @media (min-width: 992px) {
-            .text-link-navbar {
-                padding-left: 3% !important;
-                padding-right: 3% !important;
-            }
-            #navAllMenu {
-                margin-left: 15% !important;
-                margin-right: 15% !important;
-                /* align-items: center; */
+            .navbar-nav {
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
             }
         }
 
         @media (min-width: 1200px) {
-            .text-link-navbar {
-                padding-left: 10% !important;
-                padding-right: 10% !important;
-            }
-            #navAllMenu {
-                margin-left: 13% !important;
-                margin-right: 13% !important;
-                /* align-items: center; */
+            .nav-link {
+                padding: 1rem 3rem !important;
+                /* Adjust padding values as needed */
+                text-align: center;
             }
         }
 
         @media (min-width: 1400px) {
-            .text-link-navbar {
-                padding-left: 15% !important;
-                padding-right: 15% !important;
+            .nav-link {
+                padding: 1rem 5rem !important;
+                /* Adjust padding values as needed */
+                text-align: center;
             }
-            
         }
     </style>
 </head>
@@ -236,15 +204,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <!-- <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <!-- <ul class="navbar-nav mt-2 mt-lg-0">
                 </ul> -->
-                <ul class="navbar-nav mx-auto d-flex my-2 my-lg-0" id="navAllMenu">
-                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
-                            data-bs-toggle="dropdown">WHITEBOARD</a>
+                <ul class="navbar-nav my-2 my-lg-0" id="navAllMenu">
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#IWB">WHITEBOARD</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
-                                <p class="lead fst-italic fs-3">
+                                <p class="lead fst-italic fs-4">
                                     INTERACTIVE WHITEBOARD
                                 </p>
                                 <h5>
@@ -265,9 +232,8 @@
                             </div>
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
-                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
-                            data-bs-toggle="dropdown">DISPLAY</a>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#WEBCAM">DISPLAY</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -275,7 +241,7 @@
                                 </p>
                                 <h5>
                                     <a href="#" class="text-decoration-none link-dark fs-4 my-3">
-                                        Digital Poster
+                                        Video Wall
                                     </a>
                                 </h5>
                                 <h5>
@@ -285,17 +251,17 @@
                                 </h5>
                                 <h5>
                                     <a href="#" class="text-decoration-none link-dark fs-4 my-3">
+                                        Digital Poster
+                                    </a>
+                                </h5>
+                                <h5>
+                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
                                         Wallmount
                                     </a>
                                 </h5>
                                 <h5>
                                     <a href="#" class="text-decoration-none link-dark fs-4 my-3">
-                                        GOB
-                                    </a>
-                                </h5>
-                                <h5>
-                                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
-                                        Videowall
+                                        GOB Display
                                     </a>
                                 </h5>
                                 <h5>
@@ -306,9 +272,8 @@
                             </div>
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
-                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
-                            data-bs-toggle="dropdown">VIDEOTRON</a>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#DISPLAY">VIDEOTRON</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -332,9 +297,8 @@
                             </div>
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
-                    <li class="nav-item dropdown has-megamenu p-1 text-link-navbar">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white " href="#"
-                            data-bs-toggle="dropdown">WEBCAM</a>
+                    <li class="nav-item dropdown has-megamenu p-1">
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#SIGNAGE">WEBCAM</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -364,10 +328,12 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav" style="margin: 0px !important; ">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white" href="#" data-bs-toggle="dropdown"><i
-                                class="fa fa-search"></i> </a>
+                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white"
+                            style="padding-left: 16px !important; padding-right: 16px !important;" href="#"><i
+                                class="fa fa-search"></i>
+                        </a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
                             <div class="container">
                                 <div class="my-5">
@@ -411,7 +377,8 @@
                         </div>
                         <div class="text-center">
                             <img width="85%" src="image/feature_image/Processor i3.png" class="py-0" alt="">
-                            <h5 class="text-center my-3 font-league-spartan pt-3">Octa Core Cortex A73 & Intel Core i3</h5>
+                            <h5 class="text-center my-3 font-league-spartan pt-3">Octa Core Cortex A73 & Intel Core i3
+                            </h5>
                             <hr>
                         </div>
                         <div class="text-center">

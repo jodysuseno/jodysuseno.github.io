@@ -150,6 +150,30 @@
                 margin-top: 0;
             }
         }
+
+        @media (min-width: 992px) {
+            .navbar-nav {
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .nav-link {
+                padding: 1rem 3rem !important; /* Adjust padding values as needed */
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .nav-link {
+                padding: 1rem 5rem !important; /* Adjust padding values as needed */
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -166,11 +190,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                </ul>
-                <ul class="navbar-nav mx-auto d-flex my-2 my-lg-0" id="navAllMenu">
+                <!-- <ul class="navbar-nav mt-2 mt-lg-0">
+                </ul> -->
+                <ul class="navbar-nav my-2 my-lg-0" id="navAllMenu">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#IWB">WHITEBOARD</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#IWB">WHITEBOARD</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-4">
@@ -195,7 +219,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#WEBCAM">DISPLAY</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#WEBCAM">DISPLAY</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -235,7 +259,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#DISPLAY">VIDEOTRON</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#DISPLAY">VIDEOTRON</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -260,7 +284,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-5 py-3 fw-semibold fs-5 text-white" href="#SIGNAGE">WEBCAM</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#SIGNAGE">WEBCAM</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -290,9 +314,9 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav" style="margin: 0px !important; ">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white" href="#"><i class="fa fa-search"></i>
+                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white" style="padding-left: 16px !important; padding-right: 16px !important;" href="#"><i class="fa fa-search"></i>
                         </a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
                             <div class="container">
