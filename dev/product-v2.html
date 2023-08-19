@@ -173,11 +173,28 @@
             }
         }
 
+        @media (max-width: 991px) {
+            .nav-link {
+                padding: 1rem 0px !important;
+                margin: 0px !important;
+            }
+
+            #search {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+
         @media (min-width: 1200px) {
             .nav-link {
                 padding: 1rem 3rem !important;
                 /* Adjust padding values as needed */
                 text-align: center;
+            }
+
+            #search {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
             }
         }
 
@@ -330,8 +347,7 @@
                 </ul>
                 <ul class="navbar-nav" style="margin: 0px !important; ">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-3 py-3 fw-semibold fs-5 text-white"
-                            style="padding-left: 16px !important; padding-right: 16px !important;" href="#"><i
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white" id="search" style="" href="#"><i
                                 class="fa fa-search"></i>
                         </a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
