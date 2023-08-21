@@ -347,7 +347,7 @@
                 </ul>
                 <ul class="navbar-nav" style="margin: 0px !important; ">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white" id="search" style="" href="#"><i
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white" id="search" href="#"><i
                                 class="fa fa-search"></i>
                         </a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
@@ -513,6 +513,40 @@
         </section>
     </main>
 
+    <footer class="mt-auto py-2 bg-dark text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark text-white shadow-sm py-0">
+            <div class="container-fluid mx-4">
+                <a class="navbar-brand pl-5 py-0" href="">
+                    <img src="image/logo_image/LOGO HPF 1.png" height="50px" alt="hpf">
+                </a>
+                <!-- <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleFooterId" aria-controls="collapsibleFooterId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse show" id="collapsibleFooterId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    </ul>
+                    <ul class="navbar-nav mx-0 d-flex my-2 my-lg-0" id="navAllMenu">
+                        <li class="nav-item">
+                            <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                                aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
+                                aria-current="page">Career
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/contact.html"
+                                aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous">
@@ -541,51 +575,16 @@
                     blurOverlay.style.display = 'none';
                 }, 300);
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
+
             $("#navbarNavHover").hover(function () {
                 document.getElementById('.carousel-hover').style.display = 'none';
             }, function () {
                 document.getElementById('.carousel-hover').style.display = 'block';
             });
+
+            $('.img-fluid').removeAttr('style');
         });
     </script>
 </body>
-
-
-<footer class="mt-auto py-3 bg-dark text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark text-white shadow-sm py-0">
-        <div class="container-fluid mx-4">
-            <a class="navbar-brand pl-5 py-0" href="">
-                <img src="image/logo_image/LOGO HPF.png" height="50px" alt="hpf">
-            </a>
-            <!-- <button class=" d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleFooterId" aria-controls="collapsibleFooterId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <div class="collapse navbar-collapse show" id="collapsibleFooterId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                </ul>
-                <ul class="navbar-nav mx-0 d-flex my-2 my-lg-0" id="navAllMenu">
-                    <li class="nav-item">
-                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
-                            aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="" aria-current="page">Career
-                            <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4 fw-semibold fs-5 active text-white" href=""
-                            aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</footer>
 
 </html>
