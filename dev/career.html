@@ -18,187 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <style>
-        .bg-primary-custom {
-            background-color: #c32227 !important;
-        }
-
-        .bg-secondary-custom {
-            background-color: #ffc60a !important;
-        }
-
-        .font-league-spartan {
-            font-family: 'League Spartan', sans-serif;
-            /* font-family: 'Roboto', sans-serif; */
-        }
-
-        .bg-section-secondary {
-            background-color: rgb(241, 241, 241);
-        }
-
-        @font-face
-
-        /*perintah untuk memanggil font eksternal*/
-            {
-            font-family: 'Proxima Nova';
-            /*memberikan nama bebas untuk font*/
-            src: url('font/Proxima_Nova_Font.otf');
-            /*memanggil file font eksternalnya di folder nexa*/
-        }
-
-        .font-proxima-font {
-            font-family: 'Proxima Nova';
-        }
-
-        .btn-rounded-full {
-            border-radius: 100px;
-        }
-
-        /* Add styles for the blurred overlay */
-        .blur-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            z-index: 2;
-            /* Ensure overlay is below navbar */
-        }
-
-        /* Add styles for dropdown animation */
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            animation: fadeIn 0.3s;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Full-width dropdown */
-        .dropdown-menu .full-width {
-            min-width: 100%;
-            left: 0 !important;
-            right: auto !important;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* .navbar .megamenu {
-            padding: 1rem;
-            margin-top: 0px;
-        } */
-
-        /* ============ desktop view ============ */
-        @media all and (min-width: 992px) {
-
-            .navbar .has-megamenu {
-                position: static !important;
-            }
-
-            .navbar .megamenu {
-                left: 0;
-                right: 0;
-                width: 100%;
-                margin-top: 0;
-            }
-
-        }
-
-        /* ============ desktop view .end// ============ */
-
-        /* ============ mobile view ============ */
-        @media(max-width: 991px) {
-
-            .navbar.fixed-top .navbar-collapse,
-            .navbar.sticky-top .navbar-collapse {
-                overflow-y: auto;
-                max-height: 90vh;
-                margin-top: 10px;
-            }
-
-            .navbar .megamenu {
-                left: 0;
-                right: 0;
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .navbar-nav {
-                margin: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .nav-link {
-                padding: 1rem 0px !important;
-                margin: 0px !important;
-            }
-
-            #search {
-                padding-left: 0px !important;
-                padding-right: 0px !important;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .nav-link {
-                padding: 1rem 3rem !important;
-                /* Adjust padding values as needed */
-                text-align: center;
-            }
-
-            #search {
-                padding-left: 16px !important;
-                padding-right: 16px !important;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .nav-link {
-                padding: 1rem 5rem !important;
-                /* Adjust padding values as needed */
-                text-align: center;
-            }
-
-            #content-product {
-                margin-left: 150px;
-                margin-right: 150px;
-            }
-        }
-    </style>
 </head>
 
 <header>
@@ -419,7 +238,7 @@
                     </p>
                 </div>
                 <div class="row justify-content-start align-items-top pb-5" id="content-product">
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
                             <img src="image/career_image/it_programmer.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
@@ -428,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
                             <img src="image/career_image/graphic-designer.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
@@ -437,7 +256,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
                             <img src="image/career_image/marketing.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
@@ -446,16 +265,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
-                            <img src="image/career_image/enginnering.jpg" class="card-img-top rounded-0" alt="...">
+                            <img src="image/career_image/sales.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
-                                <h5 class="card-title text-center m-0">Engineering</h5>
+                                <h5 class="card-title text-center m-0">Sales</h5>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
                             <img src="image/career_image/finance_&_accounting.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
@@ -464,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 py-4">
+                    <div class="col-md-6 col-lg-4 p-4">
                         <div class="card rounded-0">
                             <img src="image/career_image/purchasing_staff.jpg" class="card-img-top rounded-0" alt="...">
                             <div class="card-body pt-3 rounded-0 bg-section-secondary">
@@ -541,8 +360,6 @@
             }, function () {
                 document.getElementById('.carousel-hover').style.display = 'block';
             });
-
-            $('.img-fluid').removeAttr('style');
         });
     </script>
 </body>

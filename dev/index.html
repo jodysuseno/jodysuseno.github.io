@@ -19,181 +19,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <style>
-        .bg-primary-custom {
-            background-color: #c32227 !important;
-        }
-
-        .bg-secondary-custom {
-            background-color: #ffc60a !important;
-        }
-
-        .font-league-spartan {
-            font-family: 'League Spartan', sans-serif;
-            /* font-family: 'Roboto', sans-serif; */
-        }
-
-        .bg-section-secondary {
-            background-color: rgb(241, 241, 241);
-        }
-
-        @font-face
-
-        /*perintah untuk memanggil font eksternal*/
-            {
-            font-family: 'Proxima Nova';
-            /*memberikan nama bebas untuk font*/
-            src: url('font/Proxima_Nova_Font.otf');
-            /*memanggil file font eksternalnya di folder nexa*/
-        }
-
-        .font-proxima-font {
-            font-family: 'Proxima Nova';
-        }
-
-        .btn-rounded-full {
-            border-radius: 100px;
-        }
-
-        /* Add styles for the blurred overlay */
-        .blur-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(5px);
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            z-index: 2;
-            /* Ensure overlay is below navbar */
-        }
-
-        /* Add styles for dropdown animation */
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            animation: fadeIn 0.3s;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Full-width dropdown */
-        .dropdown-menu .full-width {
-            min-width: 100%;
-            left: 0 !important;
-            right: auto !important;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* .navbar .megamenu {
-            padding: 1rem;
-            margin-top: 0px;
-        } */
-
-        /* ============ desktop view ============ */
-        @media all and (min-width: 992px) {
-
-            .navbar .has-megamenu {
-                position: static !important;
-            }
-
-            .navbar .megamenu {
-                left: 0;
-                right: 0;
-                width: 100%;
-                margin-top: 0;
-            }
-
-        }
-
-        /* ============ desktop view .end// ============ */
-
-        /* ============ mobile view ============ */
-        @media(max-width: 991px) {
-
-            .navbar.fixed-top .navbar-collapse,
-            .navbar.sticky-top .navbar-collapse {
-                overflow-y: auto;
-                max-height: 90vh;
-                margin-top: 10px;
-            }
-
-            .navbar .megamenu {
-                left: 0;
-                right: 0;
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .navbar-nav {
-                margin: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .nav-link {
-                padding: 1rem 0px !important;
-                margin: 0px !important;
-            }
-
-            #search {
-                padding-left: 0px !important;
-                padding-right: 0px !important;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .nav-link {
-                padding: 1rem 3rem !important;
-                /* Adjust padding values as needed */
-                text-align: center;
-            }
-
-            #search {
-                padding-left: 16px !important;
-                padding-right: 16px !important;
-            }
-        }
-
-        @media (min-width: 1400px) {
-            .nav-link {
-                padding: 1rem 5rem !important;
-                /* Adjust padding values as needed */
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 
 <header>
@@ -405,17 +230,17 @@
             <!-- <img class="img-fluid mt-5" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png" alt=""> -->
         </section>
         <section id="description" class="bg-light">
-            <div class="container py-5">
-                <p class="font-proxima-font text-center fs-4 px-4 py-5 fst-italic fw-semibold">
+            <div class="container py-5 px-0">
+                <p class="font-proxima-font text-center fs-4 px-4 py-5 mb-0 fst-italic fw-semibold">
                     Meticulously crafted to cater to the ever-evolving demands of contemporary communication, elevate
                     your collaborative experiences with our finest audio-visual equipment solutions.
                 </p>
             </div>
         </section>
         <section id="IWB" class="bg-section-secondary">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-lg-6 py-5 px-4">
+            <div class="container py-5 px-0">
+                <div class="row pt-5">
+                    <div class="col-lg-6 px-4 pb-5">
                         <h2 class="align-self-start font-proxima-font text-start pt-2 mb-5"><strong>LCD Interactive
                                 Whiteboard</strong></h3>
                             <p class="align-self-start font-proxima-font text-start fs-4 mb-5 px-0">
@@ -434,19 +259,19 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="col-lg-6 py-5 d-flex justify-content-center">
+                    <div class="col-lg-6 px-4 pb-5 d-flex justify-content-center">
                         <img src="image/category_image/IMG iwb dual OS v2.png" class="img-fluid p-2" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <section id="WEBCAM" class="bg-light">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-lg-5 py-5 d-flex justify-content-center">
-                        <img src="image/category_image/IMG Camera PTZ v2.png" class="img-fluid p-2" alt="">
+            <div class="container py-5 px-0">
+                <div class="row pt-5">
+                    <div class="col-lg-5 pb-5 px-4 d-flex justify-content-center">
+                        <img src="image/category_image/IMG Camera PTZ v2.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-7 py-5 px-4">
+                    <div class="col-lg-7 pb-5 px-4">
                         <h2 class="font-proxima-font text-start mb-5"><strong>Web Camera</strong></h2>
                         <p class="font-proxima-font text-start fs-4 mb-5">
                             Elevate your video conferences and meetings with our multifunctional cameras, one frame at a
@@ -471,9 +296,9 @@
             </div>
         </section>
         <section id="DISPLAY" class="bg-section-secondary">
-            <div class="container">
+            <div class="container pt-5 px-0">
                 <div class="row py-5">
-                    <div class="col-sm-12 col-lg-6 py-5 px-4">
+                    <div class="col-sm-12 col-lg-6 px-4 pb-5">
                         <h2 class="font-proxima-font text-start mb-5"><strong>LED Screen Indoor & Outdoor</strong></h2>
                         <p class="font-proxima-font text-start fs-4 mb-5 px-0">
                             Illuminate grand events, set concerts ablaze, and command attention wherever you are with
@@ -488,53 +313,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 py-5 d-flex justify-content-center">
+                    <div class="col-sm-12 col-lg-6 px-4 pb-5 d-flex justify-content-center">
                         <img src="image/category_image/Videotron indoor.png" class="img-fluid p-2" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <section id="SIGNAGE" class="bg-light">
-            <div class="container py-5 ">
+            <div class="container py-5 px-0">
                 <div class="row py-5 align-items-center">
-                    <h2 class="font-proxima-font text-center mb-5"><strong>Digital Signage</strong></h2>
-                    <p class="font-proxima-font text-center fs-4 mb-5">
+                    <h2 class="font-proxima-font text-center mb-5 px-4"><strong>Digital Signage</strong></h2>
+                    <p class="font-proxima-font text-center fs-4 mb-5 px-4">
                         Elevate your marketing. Transform public spaces into interactive hubs for promotions and
                         information sharing. Illuminate your message with our Digital Signages – Captivate your
                         audience.
                     </p>
-                    <div class="row justify-content-center align-items-top">
+                    <div class="row justify-content-center px-4">
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/LCD Video Wall.png" class="img-fluid mb-4" alt="">
+                                <img src="image/category_image/LCD Video Wall.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Customizable Video Wall</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/kiosk 1.png" class="img-fluid mb-4" alt="">
+                                <img src="image/category_image/kiosk 1.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Interactive Multimedia Kiosk</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/Digital Poster.png" class="img-fluid mb-4" alt="">
+                                <img src="image/category_image/Digital Poster.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Standing Digital Poster</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/wallmount 1.png" class="img-fluid mb-4" alt="">
+                                <img src="image/category_image/wallmount 1.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Wall-mounted Digital Screen</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/Double sided round LED Sign.png" class="img-fluid mb-4"
+                                <img src="image/category_image/Double sided round LED Sign.png" class="img-fluid mb-5"
                                     alt="">
                                 <h6 class="text-center">Double-sided LED Display</h6>
                                 <a href="#" class="stretched-link"></a>
@@ -542,7 +367,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-2 px-4">
                             <div class="position-relative">
-                                <img src="image/category_image/GOB.png" class="img-fluid mb-4" alt="GOB">
+                                <img src="image/category_image/GOB.png" class="img-fluid mb-5" alt="GOB">
                                 <h6 class="text-center">GOB LED Display</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
@@ -657,8 +482,6 @@
             }, function () {
                 document.getElementById('.carousel-hover').style.display = 'block';
             });
-
-            $('.img-fluid').removeAttr('style');
         });
     </script>
 </body>
