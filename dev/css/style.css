@@ -221,17 +221,17 @@
     animation: fadeIn 0.3s;
 }
 
-/* .nav-item .nav-link {
-} */
-
-/* #navAllMenu{
-    margin: 0px !important;
+.card-hover {
+  position: relative;
+  overflow: hidden;
 }
-
-.text-link-navbar{
-    padding-left: 50% !important;
-    padding-right: 50% !important;
-} */
+.card-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-hover:hover .card-overlay {
+  opacity: 1;
+}
 
 
 
