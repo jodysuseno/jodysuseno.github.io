@@ -89,49 +89,12 @@
 @font-face
 /*perintah untuk memanggil font eksternal*/
     {
-    font-family: 'League Spartan';
-    /*memberikan nama bebas untuk font*/
-    src: url('../font/LeagueSpartan-Medium.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
-}
-@font-face
-/*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'League Spartan Semibold';
-    /*memberikan nama bebas untuk font*/
-    src: url('../font/LeagueSpartan-Semibold.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
-}
-@font-face
-/*perintah untuk memanggil font eksternal*/
-    {
     font-family: 'League Spartan Bold';
     /*memberikan nama bebas untuk font*/
     src: url('../font/LeagueSpartan-Bold.ttf');
     /*memanggil file font eksternalnya di folder nexa*/
 }
-@font-face
-/*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'League Spartan ExtraBold';
-    /*memberikan nama bebas untuk font*/
-    src: url('../font/LeagueSpartan-ExtraBold.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
-}
-
-.font-league-spartan-extrabold {
-    font-family: 'League Spartan Extrabold';
-    /* font-family: 'Roboto', sans-serif; */
-}
 .font-league-spartan {
-    font-family: 'League Spartan';
-    /* font-family: 'Roboto', sans-serif; */
-}
-.font-league-spartan-semibold {
-    font-family: 'League Spartan Semibold';
-    /* font-family: 'Roboto', sans-serif; */
-}
-.font-league-spartan-bold {
     font-family: 'League Spartan Bold';
     /* font-family: 'Roboto', sans-serif; */
 }
