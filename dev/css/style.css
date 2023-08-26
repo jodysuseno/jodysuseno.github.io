@@ -91,7 +91,7 @@
     {
     font-family: 'League Spartan';
     /*memberikan nama bebas untuk font*/
-    src: url('../font/LeagueSpartan-Bold.otf');
+    src: url('../font/LeagueSpartan-Medium.ttf');
     /*memanggil file font eksternalnya di folder nexa*/
 }
 
