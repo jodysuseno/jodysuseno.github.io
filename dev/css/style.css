@@ -1,4 +1,4 @@
-.navbar-nav .dropdown {
+/* .navbar-nav .dropdown {
   position: relative;
 }
 
@@ -21,7 +21,7 @@
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
   animation: fadeOut 0.3s ease;
-}
+} */
 
 .pagination {
   display: flex;
@@ -79,34 +79,34 @@
 }
 
 .bg-primary-custom {
-    background-color: #c32227 !important;
+  background-color: #c32227 !important;
 }
 
 .bg-secondary-custom {
-    background-color: #ffc60a !important;
+  background-color: #ffc60a !important;
 }
 
 @font-face
 /*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'League Spartan Bold';
-    /*memberikan nama bebas untuk font*/
-    src: url('../font/LeagueSpartan-Bold.ttf');
-    /*memanggil file font eksternalnya di folder nexa*/
+  {
+  font-family: 'League Spartan Bold';
+  /*memberikan nama bebas untuk font*/
+  src: url('../font/LeagueSpartan-Bold.ttf');
+  /*memanggil file font eksternalnya di folder nexa*/
 }
 .font-league-spartan {
-    font-family: 'League Spartan Bold';
-    /* font-family: 'Roboto', sans-serif; */
+  font-family: 'League Spartan Bold';
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 @font-face
 
 /*perintah untuk memanggil font eksternal*/
-    {
-    font-family: 'Proxima Nova';
-    /*memberikan nama bebas untuk font*/
-    src: url('../font/Proxima_Nova_Font.otf');
-    /*memanggil file font eksternalnya di folder nexa*/
+{
+  font-family: 'Proxima Nova';
+  /*memberikan nama bebas untuk font*/
+  src: url('../font/Proxima_Nova_Font.otf');
+  /*memanggil file font eksternalnya di folder nexa*/
 }
 
 .font-proxima-font {
