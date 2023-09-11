@@ -1,98 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <style>
-    /* Custom CSS styles here */
-    .bg-primary-custom {
-      background-color: #007bff !important;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Parallax</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1555685811-7a92ee8acb7a'); /* URL gambar dari Unsplash */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; /* Mengisi seluruh layar dengan gambar */
+        }
 
-    /* Add any other custom styles as needed */
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <title>Responsive Mega Menu</title>
+        header {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .parallax {
+            background-image: url('image/career_image/marketing.jpg'); /* URL gambar dari Unsplash */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .parallax-inner {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        /* CSS tambahan sesuai kebutuhan Anda */
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary-custom navbar-dark text-white shadow-sm py-0 z-3">
-    <div class="container-fluid mx-4">
-      <a class="navbar-brand pl-5 py-2" href="/dev/">
-        <img src="image/logo_image/LOGO HPF 1.png" height="50px" alt="hpf">
-      </a>
-      <button class="d-lg-none btn border-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav my-2 my-lg-0 navAllMenu">
-          <li class="nav-item dropdown has-megamenu p-1">
-            <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#IWB">WHITEBOARD</a>
-            <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
-                <div class="container">
-                  <p class="lead fst-italic fs-3">
-                    INTERACTIVE WHITEBOARD
-                  </p>
-                  <h5>
-                    <a href="/dev/product.html" class="text-decoration-none link-dark fs-4 my-3">
-                      Interactive Whiteboard Web Series
-                    </a>
-                  </h5>
-                  <h5>
-                    <a href="" class="text-decoration-none link-dark fs-4 my-3">
-                      Interactive Whiteboard Edu Series
-                    </a>
-                  </h5>
-                  <h5>
-                    <a href="#" class="text-decoration-none link-dark fs-4 my-3">
-                      Whiteboard Accessories
-                    </a>
-                  </h5>
-                </div>
-              </div>
-          </li>
-          <li class="nav-item dropdown has-megamenu p-1">
-            <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#WEBCAM">WEBCAM</a>
-            <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
-              <!-- Mega menu content for WEBCAM -->
-            </div>
-          </li>
-          <li class="nav-item dropdown has-megamenu p-1">
-            <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#DISPLAY">VIDEOTRON</a>
-            <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
-              <!-- Mega menu content for VIDEOTRON -->
-            </div>
-          </li>
-          <li class="nav-item dropdown has-megamenu p-1">
-            <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#SIGNAGE">DISPLAY</a>
-            <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
-              <!-- Mega menu content for DISPLAY -->
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav navAllMenu" style="margin: 0px !important;">
-          <li class="nav-item dropdown has-megamenu p-1">
-            <a class="nav-link py-3 fw-semibold fs-5 text-white" id="search" href="#"><i
-                class="fa fa-search"></i>
-            </a>
-            <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
-              <div class="container">
-                <div class="my-5">
-                  <input type="text" class="form-control form-control-lg" name="" id=""
-                    aria-describedby="helpId" placeholder="Search...">
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+    <header>
+        <h1>Welcome to My Parallax Website</h1>
+    </header>
+    <section class="parallax">
+      <div class="parallax-inner">
+          <h2>Section 1</h2>
+          <p>Isi dari section 1...</p>
       </div>
-    </div>
-  </nav>
+    </section>
+    <section class="parallax">
+      <div class="parallax-inner">
+        <h2>Section 2</h2>
+        <p>Isi dari section 2...</p>
+      </div>
+    </section>
+    <section class="parallax">
+        <div class="parallax-inner">
+            <h2>Section 3</h2>
+            <p>Isi dari section 3...</p>
+        </div>
+    </section>
 
-  <!-- Include Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let offset = window.pageYOffset;
+            document.querySelector('.parallax').style.backgroundPositionY = -offset * 0.5 + 'px';
+        });
+    </script>
 </body>
 </html>

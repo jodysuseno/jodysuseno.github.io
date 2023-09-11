@@ -22,6 +22,216 @@
         .paragraph p{
             text-align: justify !important;
         }
+        @font-face{
+            font-family: 'Painting With Chocolate';
+            src: url('font/Paintingwithchocolate-K5mo.ttf');
+        }
+        .font-painting-with-chocolate {
+            font-family: 'Painting With Chocolate';
+        }
+        @font-face{
+            font-family: 'Retroica';
+            src: url('font/Retroica.ttf');
+        }
+        .font-retroica {
+            font-family: 'Retroica';
+        }
+
+        #banner{
+            height: 100vh;
+        }
+        #banner .container{
+            height: 100vh;
+            /* padding-top: 300px; */
+            display: flex !important;
+            align-items: center !important; /* vertical */
+            justify-content: center !important; /* horizontal */
+            margin: auto auto !important; 
+        }
+        #banner .container .row{
+            /* padding-top: 300px; */
+            display: flex !important;
+            align-items: center !important; /* vertical */
+            justify-content: center !important; /* horizontal */
+            margin: auto auto !important; 
+        }
+        #banner .container .row .sub{
+            font-size: 100px;
+            line-height: 100px;
+        }
+        #banner .container .row .obj{
+            font-size: 250px;
+            line-height: 250px;
+        }
+        #mission .container .content-mission .title-section{
+            font-size: 100px;
+        }
+        #mission .container .content-mission .row .col-md-6 {
+            display: flex;
+            flex-direction: column;
+        }
+        #mission .container .content-mission .row .col-md-6 .mission-paragraph {
+            flex-grow: 1;
+        }
+
+        #vision .container .content-vision .title-section{
+            font-size: 100px;
+            
+        }
+
+        #vision .container .content-vision .regular{
+            font-size: 70px;
+        }
+        #vision .container .content-vision .highlite{
+            font-size: 110px;
+        }
+        #vision .container .content-vision span{
+            line-height: 120px;
+        }
+        #vision .container .content-vision a{
+            font-size: 30px;
+        }
+
+        #team .container .content-team .title-section{
+            font-size: 100px;
+        }
+
+        .mission-paragraph{
+            font-size: 25px;
+        }
+
+        /* @media (max-width: 1400px) {
+            #vision .container .content-vision .regular{
+                font-size: 115px;
+            }
+            #vision .container .content-vision .highlite{
+                font-size: 190px;
+            }
+            #vision .container .content-vision span{
+                line-height: 180px;
+            }
+            #vision .container .content-vision a{
+                font-size: 30px;
+            }
+        } */
+
+        @media (max-width: 1200px) {
+            #vision .container .content-vision .regular{
+                font-size: 70px;
+            }
+            #vision .container .content-vision .highlite{
+                font-size: 110px;
+            }
+            #vision .container .content-vision span{
+                line-height: 120px;
+            }
+            #vision .container .content-vision a{
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #vision .container .content-vision .regular{
+                font-size: 75px;
+            }
+            #vision .container .content-vision .highlite{
+                font-size: 120px;
+            }
+            #vision .container .content-vision span{
+                line-height: 120px;
+            }
+            #vision .container .content-vision a{
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #vision .container .content-vision .regular{
+                font-size: 55px;
+            }
+            #vision .container .content-vision .highlite{
+                font-size: 90px ;
+            }
+            #vision .container .content-vision span{
+                line-height: 90px !important;
+            }
+            #vision .container .content-vision a{
+                font-size: 35px !important;
+            }
+
+            #mission .container .content-mission .title-section{
+                font-size: 80px;
+            }
+            #vision .container .content-mission .title-section{
+                font-size: 90px;
+            }
+            #team .container .content-mission .title-section{
+                font-size: 80px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            #mission .container .mobile-form{
+                display: none;
+            }
+            #mission .container .tablet-form{
+                display: block;
+            }
+        }
+
+        @media (max-width: 575px) {
+            #banner .container .row .sub{
+                font-size: 50px;
+                line-height: 100px;
+            }
+            #banner .container .row .obj{
+                font-size: 125px;
+                line-height: 100px;
+            }
+
+            #mission .container .content-mission .title-section{
+                font-size: 50px;
+                line-height: 100px;
+            }
+            #mission .container .content-mission .desc-section{
+                font-size: 30px;
+            }
+            #mission .container .content-mission .col-12 {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            #mission .container .mobile-form{
+                display: block;
+            }
+            #mission .container .tablet-form{
+                display: none;
+            }
+
+            #vision .container .content-vision .title-section{
+                font-size: 50px;
+                line-height: 100px;
+            }
+            #mission .container .content-vision .desc-section{
+                font-size: 30px;
+            }
+            #vision .container .content-vision .regular{
+                font-size: 35px !important;
+            }
+            #vision .container .content-vision .highlite{
+                font-size: 58px !important;
+            }
+            #vision .container .content-vision span{
+                line-height: 55px !important;
+            }
+            #vision .container .content-vision a{
+                font-size: 30px !important;
+            }
+
+            #team .container .content-team .title-section{
+                font-size: 50px;
+                line-height: 100px;
+            }
+        }
     </style>
 </head>
 
@@ -183,76 +393,102 @@
 </header>
 
 <body class="d-flex flex-column min-vh-100">
-
     <!-- Blurred Overlay -->
     <div class="blur-overlay" id="blurOverlay"></div>
-
     <main>
-        <section id="banner" style="margin-top: 18px !important;">
-            <img class="img-fluid mt-5" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png" alt="">
-        </section>
-        <section id="about">
+        <section id="banner" class="bg-primary-custom">
             <div class="container px-0">
-                <div class="row pt-5">
-                    <h1 class="my-5 pb-4 text-center font-league-spartan">About Us</h1>
-                    <div class="col-lg-5 px-4 d-flex justify-content-center">
-                        <img src="image/category_image/IMG Camera PTZ v2.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="paragraph col-lg-7 px-4">
-                        <p class="font-proxima-font text-start fs-4 mb-5">
-                            Selamat datang di <strong>PT. SINAROZORA LESTARI</strong>, perusahaan yang berdedikasi dalam menyediakan solusi video visual terbaik dalam industri teknologi informasi. Didirikan pada tahun 1993, kami adalah mitra terpercaya Anda dalam memenuhi kebutuhan elektronik untuk pendidikan dan bisnis. Kami bangga menjadi bagian dari perjalanan Anda dalam menjadikan lingkungan pendidikan dan bisnis lebih efisien, produktif, dan teknologi-canggih.
-                        </p>
-                    </div>
-                    <div class="paragraph col-lg-12 px-4">
-                        <p class="font-proxima-font fs-4">
-                            Kami memusatkan perhatian pada teknologi masa depan, pengembangan, dan distribusi media canggih, bertujuan untuk memberikan solusi yang inovatif dan terdepan bagi klien-klien kami. Dengan fokus ini, kami berkomitmen untuk membantu Anda mengadopsi teknologi terbaru yang akan menghadirkan pengalaman pendidikan dan bisnis yang lebih unggul dan efisien.
-                        </p>
-                        <h4>
-                            <strong>Misi</strong>
-                        </h4>
-                        <p class="font-proxima-font fs-4">
-                            Kami menyediakan solusi video visual terkini yang tidak hanya meningkatkan komunikasi, kolaborasi, dan kinerja di dalam lingkungan pendidikan dan bisnis, tetapi juga membantu Anda meraih potensi penuh dari teknologi ini. Dengan berfokus pada inovasi, kami bertujuan untuk membantu Anda mengintegrasikan teknologi video visual yang canggih ke dalam strategi pendidikan dan bisnis Anda, sehingga Anda dapat mencapai tujuan dan prestasi yang lebih tinggi.
-                        </p>
-                        <h4>
-                            <strong>Nilai Organisasi</strong>
-                        </h4>
-                        <p class="font-proxima-font fs-4">
-                            Kami berkomitmen untuk memberikan keunggulan yang terjamin, dengan mengutamakan kualitas tinggi dan kepuasan pelanggan sebagai prioritas utama. Kami memfokuskan diri pada inovasi, keahlian teknis, dan kepuasan pelanggan dalam penyediaan produk dan layanan video visual terkini. Dengan fokus kami pada kualitas, keandalan, dan integrasi yang lancar, tujuan kami adalah untuk meningkatkan pengalaman dan melebihi harapan semua klien kami.
-                        </p>
-                        <p class="font-proxima-font fs-4">
-                            Tim kami yang berdedikasi, terdiri dari para profesional terampil, berbagi semangat untuk menciptakan solusi video visual yang luar biasa dan meninggalkan dampak yang berkesan. Kami berkomitmen untuk menjadi mitra Anda dalam meraih kesuksesan dalam dunia video visual.
-                        </p>
-                    </div>
+                <div class="row py-4">
+                    <span class="sub text-center font-league-spartan text-light">this is</span>
+                    <span class="obj text-center font-league-spartan text-light">HPF</span>
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <div class="container px-0">
-                <div class="row py-5">
-                    <div class="paragraph col-lg-12 px-4">
-                        <table class="font-proxima-font fs-4"> 
-                            <tr valign="top">
-                                <td>Address</td>
-                                <td>&nbsp;:&nbsp;</td>
-                                <td>Jl. Taman Perkantoran II Kav.23 Graha Family, Surabaya - 60226 INDONESIA</td>
-                            </tr>
-                            <tr valign="top">
-                                <td>Tel</td>
-                                <td>&nbsp;:&nbsp;</td>
-                                <td>+62.31 738 9977</td>
-                            </tr>
-                            <tr valign="top">
-                                <td>Fax</td>
-                                <td>&nbsp;:&nbsp;</td>
-                                <td>+62.31 738 9889</td>
-                            </tr>
-                            <tr valign="top">
-                                <td>Emali</td>
-                                <td>&nbsp;:&nbsp;</td>
-                                <td>service.hpf@gmail.com</td>
-                            </tr>
-                        </table>
+        <section id="mission">
+            <div class="container pb-5">
+                <div class="content-mission col-lg-12 px-0">
+                    <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0">OUR MISSION</h1>
+                    <h2 class="desc-section mt-5 fst-italic text-center font-league-spartan px-0">Empowering Your Journey with Visual Excellence</h2>
+                </div>
+                <div class="content-mission mobile-form">
+                    <div class="col-12 px-md-1 px-5">
+                        <p class="mission-paragraph font-proxima-font my-5">
+                            We provide cutting-edge visual video solutions, enhancing communication and performence in educational and business setting achivements.
+                        </p>
+                        <div class="d-grid gap-2 col-8 mx-auto">
+                            <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Cameras</strong></button>
+                        </div>
                     </div>
+                    <div class="col-12 px-md-1 px-5">
+                        <p class="mission-paragraph font-proxima-font my-5">
+                            Our innovation-driven approach helps you seamlessly integrate advanced technology for higher achievements.
+                        </p>
+                        <div class="d-grid gap-2 col-8 mx-auto">
+                            <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Whiteboards</strong></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-mission tablet-form pb-5">
+                    <div class="row justify-content-center align-items-top ">
+                        <div class="col-md-6 px-5">
+                            <p class="mission-paragraph font-proxima-font my-5">
+                                We provide cutting-edge visual video solutions, enhancing communication and performence in educational and business setting achivements.
+                            </p>
+                            <div class="d-grid gap-2 col-8 mx-auto">
+                                <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Cameras</strong></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-5">
+                            <p class="mission-paragraph font-proxima-font my-5">
+                                Our innovation-driven approach helps you seamlessly integrate advanced technology for higher achievements.
+                            </p>
+                            <div class="d-grid gap-2 col-8 mx-auto">
+                                <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Whiteboards</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-mission col-lg-12 pt-5">
+                    <img src="image/profile_image/BlurryPoster.jpg" class="img-fluid rounded-top" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="vision" class="bg-black">
+            <div class="container pt-1 pb-5">
+                <div class="content-vision col-lg-12 px-0">
+                    <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0 text-white">OUR VISION</h1>
+                    <h2 class="desc-section mt-5 fst-italic text-center font-retroica px-0 text-white">Brighter Together</h2>
+                </div>
+                <p class="content-vision font-retroica text-light py-5">
+                    <span class="regular">To create</span><br>
+                    <span class="highlite">immersive</span><br>
+                    <span class="regular">and</span><br>
+                    <span class="highlite">captivating</span><br>
+                    <span class="regular">experience.</span>
+                </p>
+                <p class="content-vision font-league-spartan text-light pb-5">
+                    <a href="" class="text-decoration-none text-light">Shop Lights ></a>
+                    <br>
+                    <a href="" class="text-decoration-none text-light">Shop Screens ></a>
+                </p>
+            </div>
+        </section>
+        <section id="team">
+            <div class="container px-0">
+                <div class="content-team col-lg-12 px-0">
+                    <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0">OUR TEAM</h1>
+                    <h2 class="desc-section mt-5 fst-italic text-center font-retroica px-0">Stonger Together</h2>
+                </div>
+                <div class="paragraph col-lg-12 px-5">
+                    <p class="content-section font-proxima-font text-start fs-3 my-5 px-5">
+                        Our contiment to excellence, innovation customer satisfaction defines us. We focus on quality, reliability, and seamless integration to exceed your expectations, driven by our passion for creating exceptional visule video solution.
+                        <div class="d-grid gap-2 col-6 mx-auto pt-5 pb-3">
+                            <button class="btn btn-light font-proxima-font py-3 px-3 fs-4 border-dark border border-3 rounded-4 text-bold text-black" type="button"><strong>Browse&nbsp;Careers</strong></button>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-lg-12">
+                    <img src="image/profile_image/TeamPhoto.png" class="img-fluid" alt="...">
                 </div>
             </div>
         </section>
