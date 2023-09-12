@@ -37,9 +37,9 @@
             font-family: 'Retroica';
         }
 
-        main section {
+        /* main section {
             min-height: 100vh;
-        }
+        } */
 
         #banner{
             height: 100vh;
@@ -395,7 +395,7 @@
     <!-- Blurred Overlay -->
     <div class="blur-overlay" id="blurOverlay"></div>
     <main>
-        <section id="banner" class="bg-primary-custom" >
+        <section id="banner" class="panel bg-primary-custom">
             <div class="container px-0">
                 <div class="row py-4">
                     <span class="sub text-center font-league-spartan text-light">this is</span>
@@ -403,8 +403,8 @@
                 </div>
             </div>
         </section>
-        <section id="mission" class="bg-white">
-            <div class="container pb-5">
+        <section id="mission" class="panel bg-white">
+            <div class="container py-5">
                 <div class="content-mission col-lg-12 px-0">
                     <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0">OUR MISSION</h1>
                     <h2 class="desc-section mt-5 fst-italic text-center font-league-spartan px-0">Empowering Your Journey with Visual Excellence</h2>
@@ -452,8 +452,8 @@
                 </div>
             </div>
         </section>
-        <section id="vision" class="bg-black">
-            <div class="container pt-1 pb-5">
+        <section id="vision" class="panel bg-black">
+            <div class="container py-5">
                 <div class="content-vision col-lg-12 px-0">
                     <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0 text-white">OUR VISION</h1>
                     <h2 class="desc-section mt-5 fst-italic text-center font-retroica px-0 text-white">Brighter Together</h2>
@@ -480,8 +480,8 @@
                 </p>
             </div>
         </section>
-        <section id="team">
-            <div class="container px-0">
+        <section id="team" class="panel bg-white">
+            <div class="container py-5">
                 <div class="content-team col-lg-12 px-0">
                     <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0">OUR TEAM</h1>
                     <h2 class="desc-section mt-5 fst-italic text-center font-retroica px-0">Stonger Together</h2>
@@ -501,7 +501,7 @@
         </section>
     </main>
 
-    <footer class="mt-auto py-2 bg-dark text-light">
+    <footer class="panel mt-auto py-2 bg-dark text-light">
         <nav class="navbar navbar-expand-lg navbar-dark text-white shadow-sm py-0">
             <div class="container-fluid mx-4">
                 <a class="navbar-brand pl-5 py-0" href="">
@@ -546,6 +546,29 @@
 
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        let panels = gsap.utils.toArray(".panel");
+        // we'll create a ScrollTrigger for each panel just to track when each panel's top hits the top of the viewport (we only need this for snapping)
+        let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
+
+        panels.forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom", // if it's shorter than the viewport, we prefer to pin it at the top
+                pin: true, 
+                pinSpacing: false 
+            });
+        });
+
+    </script>
 </body>
 
 </html>
+
+
+
+
