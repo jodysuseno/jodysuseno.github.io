@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="css/aos.css" rel="stylesheet">
     <script src="js/fontawesome.com_releases_v6.3.0_js_all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/aos.css" rel="stylesheet">
     <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +35,10 @@
         }
         .font-retroica {
             font-family: 'Retroica';
+        }
+
+        main section {
+            min-height: 100vh;
         }
 
         #banner{
@@ -63,6 +67,7 @@
             font-size: 250px;
             line-height: 250px;
         }
+
         #mission .container .content-mission .title-section{
             font-size: 100px;
         }
@@ -78,7 +83,6 @@
             font-size: 100px;
             
         }
-
         #vision .container .content-vision .regular{
             font-size: 70px;
         }
@@ -99,21 +103,6 @@
         .mission-paragraph{
             font-size: 25px;
         }
-
-        /* @media (max-width: 1400px) {
-            #vision .container .content-vision .regular{
-                font-size: 115px;
-            }
-            #vision .container .content-vision .highlite{
-                font-size: 190px;
-            }
-            #vision .container .content-vision span{
-                line-height: 180px;
-            }
-            #vision .container .content-vision a{
-                font-size: 30px;
-            }
-        } */
 
         @media (max-width: 1200px) {
             #vision .container .content-vision .regular{
@@ -143,6 +132,9 @@
             #vision .container .content-vision a{
                 font-size: 30px;
             }
+            #team .container .paragraph .content-section{
+                padding: 0px !important;
+            }
         }
 
         @media (max-width: 768px) {
@@ -167,6 +159,9 @@
             }
             #team .container .content-mission .title-section{
                 font-size: 80px;
+            }
+            #team .container .paragraph .content-section{
+                padding: 0px !important;
             }
         }
 
@@ -206,13 +201,13 @@
             #mission .container .tablet-form{
                 display: none;
             }
+            #mission .container .content-vision .desc-section{
+                font-size: 30px;
+            }
 
             #vision .container .content-vision .title-section{
                 font-size: 50px;
                 line-height: 100px;
-            }
-            #mission .container .content-vision .desc-section{
-                font-size: 30px;
             }
             #vision .container .content-vision .regular{
                 font-size: 35px !important;
@@ -231,6 +226,10 @@
                 font-size: 50px;
                 line-height: 100px;
             }
+            #team .container .paragraph .content-section{
+                padding: 0px !important;
+            }
+            
         }
     </style>
 </head>
@@ -396,7 +395,7 @@
     <!-- Blurred Overlay -->
     <div class="blur-overlay" id="blurOverlay"></div>
     <main>
-        <section id="banner" class="bg-primary-custom">
+        <section id="banner" class="bg-primary-custom" >
             <div class="container px-0">
                 <div class="row py-4">
                     <span class="sub text-center font-league-spartan text-light">this is</span>
@@ -404,7 +403,7 @@
                 </div>
             </div>
         </section>
-        <section id="mission">
+        <section id="mission" class="bg-white">
             <div class="container pb-5">
                 <div class="content-mission col-lg-12 px-0">
                     <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0">OUR MISSION</h1>
@@ -435,7 +434,7 @@
                                 We provide cutting-edge visual video solutions, enhancing communication and performence in educational and business setting achivements.
                             </p>
                             <div class="d-grid gap-2 col-8 mx-auto">
-                                <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Cameras</strong></button>
+                                <button class="btn btn-light font-proxima-font py-3 px-3 fs-4 border-dark border border-3 rounded-4 text-bold text-black" type="button"><strong>Shop&nbsp;Cameras</strong></button>
                             </div>
                         </div>
                         <div class="col-md-6 px-5">
@@ -443,7 +442,7 @@
                                 Our innovation-driven approach helps you seamlessly integrate advanced technology for higher achievements.
                             </p>
                             <div class="d-grid gap-2 col-8 mx-auto">
-                                <button class="btn btn-lg p-3 border border-3 border-dark rounded-4 btn-outline-dark font-proxima-font" type="button"><strong>Shop&nbsp;Whiteboards</strong></button>
+                                <button class="btn btn-light font-proxima-font py-3 px-3 fs-4 border-dark border border-3 rounded-4 text-bold text-black" type="button"><strong>Shop&nbsp;Whiteboards</strong></button>
                             </div>
                         </div>
                     </div>
@@ -459,14 +458,22 @@
                     <h1 class="title-section mt-5 pt-4 text-center font-painting-with-chocolate px-0 text-white">OUR VISION</h1>
                     <h2 class="desc-section mt-5 fst-italic text-center font-retroica px-0 text-white">Brighter Together</h2>
                 </div>
-                <p class="content-vision font-retroica text-light py-5">
+                <p class="content-vision font-retroica text-light px-0 mx-0" data-aos="fade-right">
                     <span class="regular">To create</span><br>
+                </p>
+                <p class="content-vision font-retroica text-light px-0 mx-0" data-aos="fade-right">
                     <span class="highlite">immersive</span><br>
+                </p>
+                <p class="content-vision font-retroica text-light px-0 mx-0" data-aos="fade-right">
                     <span class="regular">and</span><br>
+                </p>
+                <p class="content-vision font-retroica text-light px-0 mx-0" data-aos="fade-right">
                     <span class="highlite">captivating</span><br>
+                </p>
+                <p class="content-vision font-retroica text-light px-0 mx-0" data-aos="fade-right">
                     <span class="regular">experience.</span>
                 </p>
-                <p class="content-vision font-league-spartan text-light pb-5">
+                <p class="content-vision font-league-spartan text-light pb-5" data-aos="fade-right">
                     <a href="" class="text-decoration-none text-light">Shop Lights ></a>
                     <br>
                     <a href="" class="text-decoration-none text-light">Shop Screens ></a>
@@ -482,7 +489,7 @@
                 <div class="paragraph col-lg-12 px-5">
                     <p class="content-section font-proxima-font text-start fs-3 my-5 px-5">
                         Our contiment to excellence, innovation customer satisfaction defines us. We focus on quality, reliability, and seamless integration to exceed your expectations, driven by our passion for creating exceptional visule video solution.
-                        <div class="d-grid gap-2 col-6 mx-auto pt-5 pb-3">
+                        <div class="d-grid gap-2 col-sm-12 col-mg-8 col-lg-6 mx-auto pt-5 pb-3">
                             <button class="btn btn-light font-proxima-font py-3 px-3 fs-4 border-dark border border-3 rounded-4 text-bold text-black" type="button"><strong>Browse&nbsp;Careers</strong></button>
                         </div>
                     </p>
