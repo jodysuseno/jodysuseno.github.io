@@ -192,8 +192,8 @@
         <section id="product" class="bg-section-secondary">
             <div class="container py-5">
                 <div class="row pt-3 align-items-top">
-                    <div class="col-lg-12"><p class="fs-4">Home / Whiteboard / Interactive Whiteboard Web Series</p></div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12 px-3"><p class="fs-5">Home / Whiteboard / Interactive Whiteboard Web Series</p></div>
+                    <div class="col-lg-6 px-3">
                         <div class="pb-2">
                             <img src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" class="img-thumbnail" alt="">
                         </div>
@@ -209,10 +209,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 px-3">
                         <div class="mb-4">
                             <h1 class="align-self-start font-proxima-font text-start mb-3"><strong>LCD Interactive Whiteboard Web
-                                Series 86"</strong></h3>
+                                Series</strong></h3>
                             <p class="align-self-start font-proxima-font text-start fs-4 mb-4 px-0">
                                 Harness the captivating multi-touch brilliance of our interactive touch screen
                                 whiteboards.
@@ -225,34 +225,34 @@
                                 <li>Dual OS</li>
                             </ul>
                         </div>
-                        <div class="mb-4">
+                        <div>
                             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-1 p-3" for="option1">86 Inch</label>
+                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-4 mx-2 p-3" for="option1" onclick="select(1)">86 Inch</label>
                             <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-1 p-3" for="option2">75 Inch</label>
+                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-4 mx-2 p-3" for="option2" onclick="select(2)">75 Inch</label>
                             <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-1 p-3" for="option3">65 Inch</label>
+                            <label class="btn btn-outline-secondary font-proxima-font btn-lg mb-4 mx-2 p-3" for="option3" onclick="select(3)">65 Inch</label>
                         </div>
-                        <div class="d-grid gap-2">
+                        <div class="d-grid gap-2 px-2">
                             <button type="button" class="btn btn-danger btn-lg p-3 font-proxima-font" data-bs-toggle="modal" data-bs-target="#modalId">
                                 Contact to Buy
                             </button>
                             <div class="modal fade" id="modalId" tabindex="-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-                                    <div class="modal-content bg-dark">
-                                        <div class="modal-header bg-dark text-light border-0 pb-0 rounded-0">
+                                    <div class="modal-content rounded-0">
+                                        <div class="modal-header border-0 pb-0 rounded-top-0">
                                             <span></span>
-                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                         </div>
-                                        <div class="modal-header bg-dark text-light text-center d-block rounded-0 pt-0">
-                                            <h3 class="fw-bold mb-3">CONTACT FORM</h3>
+                                        <div class="modal-header border-0 text-center d-block rounded-0 py-0">
+                                            <h3 class="fw-bold mb-3">Contact Us</h3>
                                             <p class="fs-6 px-3 fst-italic">Please fill in the form below, or contact us directly through our E-mail, Whatsapp and mobile listed down below.</p>
                                         </div>
                                         <div class="modal-body bg-white">
                                             <div class="container">
-                                                <div class="row justify-content-center align-items-center g-2 pt-3 pb-4">
-                                                    <div class="col-sm-12 col-md-6 text-center fs-5 m-0"><i class="fa-regular fa-envelope"></i> hpf@gmail.com</div>
-                                                    <div class="col-sm-12 col-md-6 text-center fs-5 m-0"><i class="fa-brands fa-whatsapp"></i> +6200000000000</div>
+                                                <div class="row justify-content-center align-items-center g-2 pb-4">
+                                                    <div class="col-sm-12 col-md-6 text-center fs-6 m-0"><i class="fa-regular fa-envelope"></i> hpf@gmail.com</div>
+                                                    <div class="col-sm-12 col-md-6 text-center fs-6 m-0"><i class="fa-brands fa-whatsapp"></i> +6200000000000</div>
                                                 </div>
                                                 <form action="">
                                                     <div class="mb-4">
@@ -265,14 +265,21 @@
                                                         <input type="number" class="form-control form-control-md" name="" id="" aria-describedby="helpId" placeholder="Whatsapp">
                                                     </div>
                                                     <div class="mb-4">
+                                                        <select class="form-select form-select-mg" name="" id="" >
+                                                            <option value="" id="option-product-1" class="option-product" selected>Interactive Whiteboard Web Series 86 Inch</option>
+                                                            <option value="" id="option-product-2" class="option-product">Interactive Whiteboard Web Series 75 Inch</option>
+                                                            <option value="" id="option-product-3" class="option-product">Interactive Whiteboard Web Series 65 Inch</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-4">
                                                         <textarea class="form-control form-control-md" name="" id="" rows="4" placeholder="Message"></textarea>
                                                     </div>
-                                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                                    <div class="mb-5 d-grid gap-2 col-6 mx-auto">
                                                         <button class="btn btn-danger bg-primary-custom btn-lg" type="submit">Submit</button>
                                                     </div>
                                                 </form>
                                                 <div class="d-grid gap-2 col-6 mx-auto my-4">
-                                                    <img src="image/logo_image/LOGO HPF dark.png" class="mx-auto d-block" width="100px" style="color: black;" alt="">
+                                                    <img src="image/logo_image/LOGO HPF dark.png" class="mx-auto d-block" width="75px" style="color: black;" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -489,6 +496,15 @@
 
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function select(x){
+            console.log(x)
+            for (let index = 0; index < document.getElementsByClassName('option-product').length; index++) {
+                document.getElementsByClassName('option-product')[index].removeAttribute("selected");
+            }
+            document.getElementById('option-product-'+x).setAttribute('selected', 'selected');
+        }
+    </script>
 </body>
 
 </html>
