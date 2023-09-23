@@ -18,6 +18,33 @@
             padding-left: 1rem !important; 
             padding-right: 1rem !important;
         }
+        @media (max-width: 424px) {
+            #title-modal{
+                font-size: 50px !important;
+                text-align: center;
+            }
+        }
+        @media (min-width: 425px) {
+            #title-modal{
+                font-size: 63px !important;
+            }
+        }
+        @media (max-width: 991px) {
+            #btn-modal-close-md{
+                display: block;
+            }
+            #btn-modal-close-lg{
+                display: none;
+            }
+        }
+        @media (min-width: 992px) {
+            #btn-modal-close-md{
+                display: none;
+            }
+            #btn-modal-close-lg{
+                display: block;
+            }
+        }
     </style>
     <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -192,7 +219,12 @@
         <section id="product" class="bg-section-secondary">
             <div class="container py-5">
                 <div class="row pt-3 align-items-top">
-                    <div class="col-lg-12 px-4"><p class="fs-5 text-secondary text-opacity-75">Home / Whiteboard / <strong class="text-dark">Interactive Whiteboard Web Series</strong></p></div>
+                    <div class="col-lg-12 px-4"><p class="fs-5 text-secondary text-opacity-75">
+                        <a href="/" class="text-decoration-none text-secondary" >Home</a>  
+                        / 
+                        <a href="#" class="text-decoration-none text-secondary" >Whiteboard</a>
+                        / 
+                        <strong class="text-dark">Interactive Whiteboard Web Series</strong></p></div>
                     <div class="col-lg-6 px-4">
                         <div class="pb-2">
                             <img src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" class="img-thumbnail" alt="">
@@ -219,7 +251,7 @@
                                 Our answer to all your collaboration and brainstorming needs.
                             </p>
                             <h3 class="align-self-start font-proxima-font text-start mb-2"><strong>Features</strong></h3>
-                            <ul class="align-self-start font-proxima-font text-start fs-5">
+                            <ul class="align-self-start font-proxima-font text-start fs-5 pt-2">
                                 <li>Touch Screeen</li>
                                 <li>LED Screen</li>
                                 <li>Dual OS</li>
@@ -294,35 +326,6 @@
                                     <div class="modal-content rounded-0">
                                         <div class="modal-body">
                                             <div class="row justify-content-center align-items-end">
-                                                <style>
-                                                    @media (max-width: 424px) {
-                                                        #title-modal{
-                                                            font-size: 50px !important;
-                                                            text-align: center;
-                                                        }
-                                                    }
-                                                    @media (min-width: 425px) {
-                                                        #title-modal{
-                                                            font-size: 63px !important;
-                                                        }
-                                                    }
-                                                    @media (max-width: 991px) {
-                                                        #btn-modal-close-md{
-                                                            display: block;
-                                                        }
-                                                        #btn-modal-close-lg{
-                                                            display: none;
-                                                        }
-                                                    }
-                                                    @media (min-width: 992px) {
-                                                        #btn-modal-close-md{
-                                                            display: none;
-                                                        }
-                                                        #btn-modal-close-lg{
-                                                            display: block;
-                                                        }
-                                                    }
-                                                </style>
                                                 <div class="col-lg-6 col-xl-5 px-0 bg-white" style="display: flex !important; flex-direction: column !important; ">
                                                     <div class="modal-header border-0 py-0 rounded-top-0" style="flex-grow: 1 !important;">
                                                         <span></span>
