@@ -13,56 +13,6 @@
     <link href="css/aos.css" rel="stylesheet" />
     <script src="js/fontawesome.com_releases_v6.3.0_js_all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-        .tab-resume {
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-        }
-
-        @media (max-width: 424px) {
-            #title-modal {
-                font-size: 50px !important;
-                text-align: center;
-            }
-        }
-
-        @media (min-width: 425px) {
-            #title-modal {
-                font-size: 63px !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #title_category {
-                font-size: 50px !important;
-                line-height: 50px !important;
-            }
-
-            .product-category {
-                padding: 20px !important;
-            }
-        }
-
-        @media (max-width: 991px) {
-            #btn-modal-close-md {
-                display: block;
-            }
-
-            #btn-modal-close-lg {
-                display: none;
-            }
-        }
-
-        @media (min-width: 992px) {
-            #btn-modal-close-md {
-                display: none;
-            }
-
-            #btn-modal-close-lg {
-                display: block;
-            }
-        }
-    </style>
     <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,7 +35,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav my-2 my-lg-0 navAllMenu">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#">WHITEBOARD</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WHITEBOARD</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -110,7 +60,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#">WEBCAM</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WEBCAM</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -140,7 +90,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#">VIDEOTRON</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">VIDEOTRON</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -165,7 +115,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" href="#">DISPLAY</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">DISPLAY</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -207,7 +157,7 @@
                 </ul>
                 <ul class="navbar-nav navAllMenu" style="margin: 0px !important; ">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link py-3 fw-semibold fs-5 text-white" id="search" href="#"><i
+                        <a class="nav-link py-3 fw-semibold fs-5 text-white pe-none" id="search"><i
                                 class="fa fa-search"></i>
                         </a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 p-2" role="menu">
@@ -231,36 +181,35 @@
     <div class="blur-overlay" id="blurOverlay"></div>
     <main>
         <div style="height: 70px !important"></div>
-        <section id="title">
-            <div class="container py-5">
-                <div class="row justify-content-center align-items-center g-2 my-5">
-                    <div class="col text-center py-5 p-3">
-                        <label id="title_category" class="font-league-spartan"
-                            style="font-size: 90px; line-height: 100px">Cameras</label> <br>
-                        <label class="fs-3" style="text-align: center">Share your idea for everyone
-                        </label>
+        <section id="title" class="pt-5">
+            <div class="container pt-5">
+                <div class="row justify-content-center align-items-center g-2 pt-5">
+                    <div class="col text-center">
+                        <div class="col text-center">
+                            <label id="title_category" class="font-league-spartan" style="font-size: 90px; line-height: 100px">Cameras</label> <br>
+                            <label class="fs-1 fst-italic font-proxima-font" style="text-align: center"> Share your idea for everyone</label>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="about">
-            <div class="container">
-                <img class="img-fluid p-3" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png"
-                    alt="" />
+        <section id="about" class="pt-5">
+            <div class="container pt-5">
+                <img class="img-fluid px-3 pt-5" src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png" alt="" />
             </div>
         </section>
-        <section id="product">
-            <div class="container mb-5">
-                <div class="row justify-content-center align-items-center g-2">
-                    <div class="col-sm-12 text-center p-3">
-                        <div class="text-center p-5 product-category" style="background-color: rgb(239 239 239)">
+        <section id="product" class="pb-5">
+            <div class="container pb-5 pt-4">
+                <div class="row justify-content-center align-items-center g-2 pb-5 align-items-stretch">
+                    <div class="col-sm-12 text-center mt-0 p-3">
+                        <div class="text-center p-5 product-category bg-card-category">
                             <div class="row justify-content-center align-items-center g-2">
-                                <div class="col-sm-12 col-md-6 p-3">
+                                <div class="col-sm-12 col-md-6 p-3 pe-lg-5">
                                     <img src="image/category_image/IMG Camera PTZ v2.png" alt="" class="img-fluid mt-3" />
                                 </div>
-                                <div class="col-sm-12 col-md-6 text-start p-3">
+                                <div class="col-sm-12 col-md-6 text-start p-3 ps-lg-5">
                                     <h3 class="mb-3 font-league-spartan fs-1">Web Camera</h3>
-                                    <p class="fs-5 text-decoration-none fw-bold font-proxima-font">
+                                    <p class="fs-5 mb-5 text-decoration-none fw-bold font-proxima-font">
                                         Elevate your video conferences and meetings with our multifunctional cameras, one frame at a time.
                                     </p>
                                     <a href="" class="fs-5 pb-5 text-decoration-none fw-bold font-proxima-font">Learn more ></a>
@@ -268,15 +217,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 text-center p-3">
-                        <div class="text-center p-5 product-category" style="background-color: rgb(239 239 239)">
+                    <div class="col-sm-12 text-center mt-0 p-3">
+                        <div class="text-center p-5 product-category bg-card-category">
                             <div class="row justify-content-center align-items-center g-2">
-                                <div class="col-sm-12 col-md-6 p-3">
+                                <div class="col-sm-12 col-md-6 p-3 pe-lg-5">
                                     <img src="image/category_image/IMG Camera PTZ v2.png" alt="" class="img-fluid mt-3" />
                                 </div>
-                                <div class="col-sm-12 col-md-6 text-start p-3">
+                                <div class="col-sm-12 col-md-6 text-start p-3 ps-lg-5">
                                     <h3 class="mb-3 font-league-spartan fs-1">Meeting Camera</h3>
-                                    <p class="fs-5 text-decoration-none fw-bold font-proxima-font">
+                                    <p class="fs-5 mb-5 text-decoration-none fw-bold font-proxima-font">
                                         Elevate your video conferences and meetings with our multifunctional cameras, one frame at a time.
                                     </p>
                                     <a href="" class="fs-5 pb-5 text-decoration-none fw-bold font-proxima-font">Learn more ></a>
@@ -284,15 +233,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 text-center p-3">
-                        <div class="text-center p-5 product-category" style="background-color: rgb(239 239 239)">
+                    <div class="col-sm-12 text-center mt-0 p-3">
+                        <div class="text-center p-5 product-category bg-card-category">
                             <div class="row justify-content-center align-items-center g-2">
-                                <div class="col-sm-12 col-md-6 p-3">
+                                <div class="col-sm-12 col-md-6 p-3 pe-lg-5">
                                     <img src="image/category_image/IMG Camera PTZ v2.png" alt="" class="img-fluid mt-3" />
                                 </div>
-                                <div class="col-sm-12 col-md-6 text-start p-3">
+                                <div class="col-sm-12 col-md-6 text-start p-3 ps-lg-5">
                                     <h3 class="mb-3 font-league-spartan fs-1">Confecence Camera</h3>
-                                    <p class="fs-5 text-decoration-none fw-bold font-proxima-font">
+                                    <p class="fs-5 mb-5 text-decoration-none fw-bold font-proxima-font">
                                         Elevate your video conferences and meetings with our multifunctional cameras, one frame at a time.
                                     </p>
                                     <a href="" class="fs-5 pb-5 text-decoration-none fw-bold font-proxima-font">Learn more ></a>
