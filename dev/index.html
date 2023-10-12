@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        
+    </style>
 </head>
 
 <header>
@@ -35,8 +38,9 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav my-2 my-lg-0 navAllMenu">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WHITEBOARD</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink1" href="whiteboard.html">WHITEBOARD</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
+                            <!-- <div style="height: 10px; background-color: blue;"></div> -->
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
                                     <a href="whiteboard.html" class="text-decoration-none link-dark" >INTERACTIVE WHITEBOARD</a>
@@ -60,7 +64,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WEBCAM</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink2" href="webcam.html">WEBCAM</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -90,7 +94,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">VIDEOTRON</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink3" href="videotron.html">VIDEOTRON</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -115,7 +119,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">DISPLAY</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink4" href="display.html">DISPLAY</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -176,29 +180,20 @@
 
 </header>
 
-<body class="d-flex flex-column min-vh-100">
-
+<body class="d-flex flex-column min-vh-100" >
     <!-- Blurred Overlay -->
     <div class="blur-overlay" id="blurOverlay"></div>
-
     <main>
-        <section id="banner" style="margin-top: 18px !important;">
-            <div class="pt-3 bg-light rounded-3 mt-5">
+        <div style="height: 70px !important;"></div>
+        <section id="banner">
+            <div class="bg-light rounded-3">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div> -->
                     <div class="carousel-inner">
                         <a href="/">
                             <div class="carousel-item active">
                                 <img src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png"
                                     class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block ">
-                                    <!-- {{-- <h5>Coming soon further info</h5> --}}
-                                    {{-- <p>Some representative placeholder content for the first slide.</p> --}} -->
                                 </div>
                             </div>
                         </a>
@@ -207,8 +202,6 @@
                                 <img src="image/banner_image/lcd-interactive-whiteboatd-PUGYY-1691986860.png"
                                     class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block ">
-                                    <!-- {{-- <h5>Coming soon further info</h5> --}}
-                                    {{-- <p>Some representative placeholder content for the first slide.</p> --}} -->
                                 </div>
                             </div>
                         </a>
@@ -258,8 +251,8 @@
                             </div>
                         </div> -->
                     </div>
-                    <div class="col-lg-6 py-5 d-flex justify-content-center">
-                        <img src="image/category_image/IMG iwb dual OS.png" class="img-fluid p-2" alt="">
+                    <div class="col-lg-6 py-5 justify-content-center">
+                        <img src="image/category_image/IMG iwb dual OS v2.png" class="img-fluid p-2" alt="">
                     </div>
                 </div>
             </div>
@@ -267,8 +260,8 @@
         <section id="WEBCAM" class="bg-light">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-lg-5 py-5 d-flex justify-content-center">
-                        <img src="image/category_image/Camera PTZ.png" class="img-fluid p-2" alt="">
+                    <div class="col-lg-5 py-5  justify-content-center">
+                        <img src="image/category_image/IMG Camera PTZ v2.png" class="img-fluid p-2" alt="">
                     </div>
                     <div class="col-lg-7 py-5 px-4">
                         <h2 class="font-proxima-font text-start mb-5"><strong>Web Camera</strong></h2>
@@ -277,9 +270,9 @@
                             time.
                         </p>
                         <div class="pt-3">
-                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-5">Web&nbsp;Camera&nbsp;></a>
-                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-5">Meeting&nbsp;Camera&nbsp;></a>  
-                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-5">Confecence&nbsp;Camera&nbsp;></a>  
+                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-4 me-xxl-5">Web&nbsp;Camera&nbsp;></a>
+                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-4 me-xxl-5">Meeting&nbsp;Camera&nbsp;></a>  
+                            <a href="" class="fs-5 text-decoration-none fw-bold font-proxima-font d-block d-md-inline d-lg-block d-xl-inline me-0 me-md-4 me-xl-4 me-xxl-5">Confecence&nbsp;Camera&nbsp;></a>  
                         </div>
                         <!-- <div class="row">
                             <div class="d-grid col-md-4 col-lg-4 py-2 px-3">
@@ -302,7 +295,7 @@
         <section id="DISPLAY" class="bg-section-secondary">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-sm-12 col-lg-6 py-5 px-4">
+                    <div class="col-lg-6 py-5 px-4">
                         <h2 class="font-proxima-font text-start mb-5"><strong>LED Screen Indoor & Outdoor</strong></h2>
                         <p class="font-proxima-font text-start fs-4 mb-5 px-0">
                             Illuminate grand events, set concerts ablaze, and command attention wherever you are with
@@ -321,7 +314,7 @@
                             </div>
                         </div> -->
                     </div>
-                    <div class="col-sm-12 col-lg-6 py-5 d-flex justify-content-center">
+                    <div class="col-lg-6 py-5 justify-content-center">
                         <img src="image/category_image/Videotron indoor.png" class="img-fluid p-2" alt="">
                     </div>
                 </div>
@@ -329,43 +322,43 @@
         </section>
         <section id="SIGNAGE" class="bg-light">
             <div class="container py-5 ">
-                <div class="row py-0 mx-0 px-0 py-sm-5 mx-sm-4 align-items-center px-4">
+                <div class="my-5">
                     <h2 class="font-proxima-font text-center mb-5"><strong>Digital Signage</strong></h2>
-                    <p class="font-proxima-font text-center fs-4 mb-5">
+                    <p class="font-proxima-font text-center fs-4 mb-5 px-0 mx-0 px-md-5 mx-md-5">
                         Elevate your marketing. Transform public spaces into interactive hubs for promotions and
                         information sharing. Illuminate your message with our Digital Signages – Captivate your
                         audience.
                     </p>
-                    <div class="row justify-content-center align-items-top">
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                    <div class="row justify-content-center align-items-top g-2">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/LCD Video Wall.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Customizable Video Wall</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/kiosk 1.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Interactive Multimedia Kiosk</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/Digital Poster.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Standing Digital Poster</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/wallmount 1.png" class="img-fluid mb-5" alt="">
                                 <h6 class="text-center">Wall-mounted Digital Screen</h6>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/Double sided round LED Sign.png" class="img-fluid mb-5"
                                     alt="">
@@ -373,7 +366,7 @@
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-2 px-4">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-5 px-4">
                             <div class="position-relative">
                                 <img src="image/category_image/GOB.png" class="img-fluid mb-5" alt="GOB">
                                 <h6 class="text-center">Glue-on-Board (GOB) LED Display</h6>
@@ -381,47 +374,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row justify-content-center align-items-top">
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/lcd-video-wall-pnN1C-1691461352.png" class="img-fluid"
-                                    alt="">
-                                <h6>Video&nbsp;Wall</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/i01_untitled-1.png" class="img-fluid" alt="">
-                                <h6>Interactive Multimedia&nbsp;Kiosk</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/GOB LED Digital Poster.png" class="img-fluid" alt="dfsdf">
-                                <h6>GOB&nbsp;Digital&nbsp;Poster</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/digital-poster-signage-screen-Pphc8-1691461401.png"
-                                    class="img-fluid" alt="">
-                                <h6>Digital&nbsp;Poster</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/wallmount.png" class="img-fluid" alt="">
-                                <h6>Wall-mounted Digital&nbsp;Screen</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <img src="image/category_image/Double sided round LED Sign.png" class="img-fluid"
-                                    alt="GOB">
-                                <h6>Double&nbsp;Sided LED&nbsp;Display</h6>
-                            </a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -438,16 +390,16 @@
                     <ul class="navbar-nav mx-0 d-flex my-2 my-lg-0" id="navAllMenu">
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/about-us.html"
-                                aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
+                                aria-current="page">ABOUT&nbsp;US <span class="visually-hidden">(current)</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/career.html"
-                                aria-current="page">Career
-                                <span class="visually-hidden">(current)</span></a>
+                                aria-current="page">CAREER
+                                <span class="visually-hidden">(current)</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/contact.html"
-                                aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
+                                aria-current="page">CONTACT<span class="visually-hidden">(current)</a>
                         </li>
                     </ul>
                 </div>

@@ -11,12 +11,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/aos.css" rel="stylesheet">
     <script src="js/fontawesome.com_releases_v6.3.0_js_all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="image/logo_image/logo1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        
+    </style>
 </head>
 
 <header>
@@ -34,7 +38,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav my-2 my-lg-0 navAllMenu">
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WHITEBOARD</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink1" href="whiteboard.html">WHITEBOARD</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -59,7 +63,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">WEBCAM</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink2" href="webcam.html">WEBCAM</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -89,7 +93,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">VIDEOTRON</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink3" href="videotron.html">VIDEOTRON</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -114,7 +118,7 @@
                         </div> <!-- dropdown-mega-menu.// -->
                     </li>
                     <li class="nav-item dropdown has-megamenu p-1">
-                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white pe-none">DISPLAY</a>
+                        <a class="nav-link px-4 py-3 fw-semibold fs-5 text-white" id="navLink4" href="display.html">DISPLAY</a>
                         <div class="dropdown-menu megamenu rounded-0 border border-0 py-5 px-3" role="menu">
                             <div class="container">
                                 <p class="lead fst-italic fs-3">
@@ -180,30 +184,73 @@
     <!-- Blurred Overlay -->
     <div class="blur-overlay" id="blurOverlay"></div>
     <main>
-        <div  style="height: 70px !important;"></div>
+        <div style="height: 70px !important;"></div>
         <section id="product" class="bg-section-secondary">
             <div class="container py-5">
                 <div class="row pt-3 align-items-top">
-                    <div class="col-lg-12 px-4"><p class="fs-5 text-secondary text-opacity-75">
-                        <a href="/" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" >Home</a>  
-                        / 
-                        <a href="whiteboard.html" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" >Whiteboard</a>
-                        / 
-                        <strong class="text-dark">Interactive Whiteboard Web Series</strong></p></div>
+                    <div class="col-lg-12 px-4">
+                        <p class="fs-5 mb-4 text-secondary text-opacity-75">
+                            <a href="/" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" >Home</a>  
+                            / 
+                            <a href="whiteboard.html" class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" >Whiteboard</a>
+                            / 
+                            <strong class="text-dark">Interactive Whiteboard Web Series</strong>
+                        </p>
+                    </div>
                     <div class="col-lg-6 px-4">
                         <div class="pb-2">
-                            <img src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" class="img-thumbnail" alt="">
+                            <img src="image/product/iwb1.png" class="img-thumbnail" id="imageItem" alt="">
                         </div>
-                        <div class="row py-4">
-                            <div class="col-4">
-                                <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
+                        <div id="carouselItem" class="carousel slide my-4" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row g-2 g-sm-4">
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb1.png" alt="" onclick="selectImageItem('iwb1.png')" style="cursor: pointer;">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb2.png" alt="" onclick="selectImageItem('iwb2.png')" style="cursor: pointer;">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb3.png" alt="" onclick="selectImageItem('iwb3.png')" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row g-2 g-sm-4">
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb4.png" alt="" onclick="selectImageItem('iwb4.png')" style="cursor: pointer;">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb4.png" alt="" onclick="selectImageItem('iwb4.png')" style="cursor: pointer;">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/product/iwb4.png" alt="" onclick="selectImageItem('iwb4.png')" style="cursor: pointer;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="carousel-item">
+                                    <div class="row g-2 g-sm-4">
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
+                                        </div>
+                                        <div class="col-4">
+                                            <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
-                            <div class="col-4">
-                                <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
-                            </div>
-                            <div class="col-4">
-                                <img class="img-thumbnail" src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg" alt="">
-                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselItem" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                     <div class="col-lg-6 px-4">
@@ -215,7 +262,7 @@
                                 whiteboards.
                                 Our answer to all your collaboration and brainstorming needs.
                             </p>
-                            <h3 class="align-self-start font-proxima-font text-start mb-2"><strong>Features</strong></h3>
+                            <h4 class="align-self-start font-proxima-font text-start mb-2"><strong>Features</strong></h4>
                             <ul class="align-self-start font-proxima-font text-start fs-5 pt-2">
                                 <li>Touch Screeen</li>
                                 <li>LED Screen</li>
@@ -224,11 +271,11 @@
                         </div>
                         <div>
                             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-5" for="option1" onclick="select(1)">86 Inch</label>
+                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-4 mb-sm-4 mx-sm-2 p-sm-3 px-sm-5" for="option1" onclick="select(1)">86 Inch</label>
                             <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-5" for="option2" onclick="select(2)">75 Inch</label>
+                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-4 mb-sm-4 mx-sm-2 p-sm-3 px-sm-5" for="option2" onclick="select(2)">75 Inch</label>
                             <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-5" for="option3" onclick="select(3)">65 Inch</label>
+                            <label class="btn btn-outline-dark opacity-75 font-proxima-font btn-lg mb-4 mx-2 p-3 px-4 mb-sm-4 mx-sm-2 p-sm-3 px-sm-5" for="option3" onclick="select(3)">65 Inch</label>
                         </div>
                         <div class="d-grid gap-2 px-2 py-4">
                             <!-- <button type="button" class="btn btn-danger btn-lg p-3 font-proxima-font" data-bs-toggle="modal" data-bs-target="#modalId">
@@ -284,7 +331,7 @@
                                 </div>
                             </div> -->
                             <button type="button" class="btn btn-danger btn-lg p-3 font-proxima-font" data-bs-toggle="modal" data-bs-target="#modalId">
-                                Contact to Buy
+                                Purchase
                             </button>
                             <div class="modal fade " id="modalId" tabindex="-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
                                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
@@ -298,7 +345,7 @@
                                                     </div>
                                                     <div class="d-grid gap-2 col-xl-10 mx-auto mb-5 p-3">
                                                         <h1 class="fw-bolder mb-5" id="title-modal">Let's Chat!</h1>
-                                                        <label for="" class="btn btn-danger rounded-4 bg-primary-custom mb-3"> 
+                                                        <label class="btn btn-danger rounded-4 bg-primary-custom pe-none mb-3"> 
                                                             <div class="row row-cols-auto px-3 align-items-center">
                                                                 <div class="col">
                                                                     <i class="fa-regular fa-envelope fa-2xl"></i>
@@ -308,7 +355,7 @@
                                                                 </div>
                                                             </div>
                                                         </label>
-                                                        <label for="" class="btn btn-outline-secondary rounded-4 mb-3"> 
+                                                        <label class="btn btn-white rounded-4 border-dark pe-none mb-3"> 
                                                             <div class="row row-cols-auto px-3 align-items-center">
                                                                 <div class="col">
                                                                     <i class="fa-brands fa-whatsapp fa-2xl"></i>
@@ -340,7 +387,7 @@
                                                                         <input type="text" class="form-control form-control-md" name="" id="" aria-describedby="helpId" placeholder="Email *">
                                                                     </div>
                                                                     <div class="mb-4">
-                                                                        <input type="number" class="form-control form-control-md" name="" id="" aria-describedby="helpId" placeholder="Whatsapp">
+                                                                        <input type="number" name="phone" class="form-control exampleInputPhone" id="exampleInputPhone" aria-describedby="phoneHelp" value="" placeholder="Whatsapp" required>
                                                                     </div>
                                                                     <div class="mb-4">
                                                                         <select class="form-select form-select-mg" name="" id="" >
@@ -357,7 +404,6 @@
                                                                     </div>
                                                                 </form>
                                                             </div>
-                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -429,12 +475,12 @@
             <div class="container py-5">
                 <h1 class="text-center mb-5 py-5 px-3 font-proxima-font"><strong>Which is right for you?</strong></h1>
                 <div class="row justify-content-start align-items-top my-5" id="content-product1">
-                    <div class="col-md-6 col-lg-4 px-4 pb-5 mb-5">
+                    <div class="col-6 col-md-4 col-lg-4 px-1 px-sm-4 pb-0 pb-sm-5 mb-5">
                         <div class="text-center">
                             <img width="80%" class="rounded mx-auto d-block img-thumbnail"
                                 src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
                                 alt="IWB">
-                            <h4 class="text-center my-5 px-4">LCD Interactive Whiteboard Web Series 86"</h4>
+                            <h4 class="text-center my-5 px-4">LCD Interactive Whiteboard Web Series 65"</h4>
                         </div>
                         <div class="text-center py-2">
                             <img width="85%" src="image/feature_image/Icon OS.jpg" class="py-0" alt="">
@@ -442,9 +488,8 @@
                         </div>
                         <hr>
                         <div class="text-center py-2">
-                            <img width="85%" src="image/feature_image/Processor i3.png" class="py-0" alt="">
-                            <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Octa Core Cortex A73 & Intel Core i3
-                            </h6>
+                            <img width="85%" src="image/feature_image/Processor i5.png" class="py-0" alt="">
+                            <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Octa Core Cortex A73 & Intel Core i5</h6>
                         </div>
                         <hr>
                         <div class="text-center py-2">
@@ -462,7 +507,7 @@
                             <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Stereo Speaker 15Wx2</h6>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 pb-5 mb-5">
+                    <div class="col-6 col-md-4 col-lg-4 px-1 px-sm-4 pb-0 pb-sm-5 mb-5">
                         <div class="text-center">
                             <img width="80%" class="rounded mx-auto d-block img-thumbnail"
                                 src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
@@ -494,12 +539,12 @@
                             <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Stereo Speaker 15Wx2</h6>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 px-4 pb-5 mb-5">
+                    <div class="col-6 col-md-4 col-lg-4 px-1 px-sm-4 pb-0 pb-sm-5 mb-5">
                         <div class="text-center">
                             <img width="80%" class="rounded mx-auto d-block img-thumbnail"
                                 src="image/item_image/lcd-interactive-whiteboard-86-inch-4k-with-ops-portable-stand-CEplr-1691753204.jpg"
                                 alt="IWB">
-                            <h4 class="text-center my-5 px-4">LCD Interactive Whiteboard Web Series 65"</h4>
+                            <h4 class="text-center my-5 px-4">LCD Interactive Whiteboard Web Series 86"</h4>
                         </div>
                         <div class="text-center py-2">
                             <img width="85%" src="image/feature_image/Icon OS.jpg" class="py-0" alt="">
@@ -507,8 +552,9 @@
                         </div>
                         <hr>
                         <div class="text-center py-2">
-                            <img width="85%" src="image/feature_image/Processor i5.png" class="py-0" alt="">
-                            <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Octa Core Cortex A73 & Intel Core i5</h6>
+                            <img width="85%" src="image/feature_image/Processor i3.png" class="py-0" alt="">
+                            <h6 class="text-center mt-3 mb-0 font-proxima-font fw-semibold">Octa Core Cortex A73 & Intel Core i3
+                            </h6>
                         </div>
                         <hr>
                         <div class="text-center py-2">
@@ -543,16 +589,16 @@
                     <ul class="navbar-nav mx-0 d-flex my-2 my-lg-0" id="navAllMenu">
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/about-us.html"
-                                aria-current="page">About&nbsp;Us <span class="visually-hidden">(current)</span></a>
+                                aria-current="page">ABOUT&nbsp;US <span class="visually-hidden">(current)</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/career.html"
-                                aria-current="page">Career
-                                <span class="visually-hidden">(current)</span></a>
+                                aria-current="page">CAREER
+                                <span class="visually-hidden">(current)</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-4 fw-semibold fs-5 active text-white" href="/dev/contact.html"
-                                aria-current="page">Contact<span class="visually-hidden">(current)</span></a>
+                                aria-current="page">CONTACT<span class="visually-hidden">(current)</a>
                         </li>
                     </ul>
                 </div>
@@ -563,7 +609,15 @@
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script>
+    const input = document.querySelector(".exampleInputPhone");
+    const iti = window.intlTelInput(input, {
+        preferredCountries: ["ID"],
+        separateDialCode: true,
+        
+    });
+    </script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();
@@ -578,7 +632,11 @@
             }
             document.getElementById('option-product-'+x).setAttribute('selected', 'selected');
         }
+        function selectImageItem(image){
+            document.getElementById("imageItem").src = "image/product/" + image;
+        }
     </script>
+    
 </body>
 
 </html>

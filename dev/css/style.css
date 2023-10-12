@@ -23,6 +23,10 @@
   animation: fadeOut 0.3s ease;
 } */
 
+header .nav{
+  min-height: 70px !important;
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -335,7 +339,7 @@
       display: block;
   }
   .category-description{
-    font-size: 2.5rem!important;
+    font-size: 1.75rem!important;
   }
 }
 .iti {
@@ -343,4 +347,22 @@
 }
 .bg-card-category{
   background-color: rgb(245, 245, 245) !important; 
+}
+#carouselItem .carousel-control-prev {
+  width: 40px;
+  font-size: 24px;
+  background-color: black;
+  opacity: 10%;
+}
+#carouselItem .carousel-control-prev:hover {
+  opacity: 20%;
+}
+#carouselItem .carousel-control-next {
+  width: 40px;
+  font-size: 24px;
+  background-color: black;
+  opacity: 10%;
+}
+#carouselItem .carousel-control-next:hover {
+  opacity: 20%;
 }
