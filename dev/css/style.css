@@ -138,10 +138,10 @@ header .nav{
 }
 
 /* Add styles for dropdown animation */
-.dropdown:hover .dropdown-menu {
-    display: block;
-    animation: fadeIn 0.3s;
-}
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      animation: fadeIn 0.3s;
+  }
 
 .card-hover {
   position: relative;
@@ -239,23 +239,33 @@ header .nav{
         justify-content: center;
         align-items: center;
     }
-}
-
-@media (max-width: 991px) {
     .nav-link {
-        padding: 1rem 0px !important;
-        margin: 0px !important;
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+      margin: 0px !important;
     }
-
+    .dropdown-menu-magamenu{
+      margin-top: 1rem !important;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .nav-link {
+      padding-top: 1rem !important;
+      padding-left: 0px !important;
+      padding-bottom: 1rem !important;
+      margin: 0px !important;
+    }
+    
     #search {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
     }
-}
+  }
 
 @media (min-width: 1200px) {
     .nav-link {
-        padding: 1rem 3rem !important;
+        padding: 0rem 3rem !important;
         /* Adjust padding values as needed */
         text-align: center;
     }
@@ -268,7 +278,7 @@ header .nav{
 
 @media (min-width: 1400px) {
     .nav-link {
-        padding: 1rem 5rem !important;
+        padding: 0rem 5rem !important;
         /* Adjust padding values as needed */
         text-align: center;
     }
@@ -278,7 +288,7 @@ header .nav{
     }
 }
 .tab-resume {
-  padding-left: 1rem !important;
+  padding-left: 0rem !important;
   padding-right: 1rem !important;
 }
 
@@ -363,6 +373,6 @@ header .nav{
   background-color: black;
   opacity: 10%;
 }
-#carouselItem .carousel-control-next:hover {
-  opacity: 20%;
-}
+
+
+

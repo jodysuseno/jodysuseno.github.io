@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    // $(".navAllMenu").hover(function () {
+    //     blurOverlay.style.display = 'block';
+    //     blurOverlay.style.opacity = '1';
+    // }, function () {
+    //     blurOverlay.style.opacity = '0';
+    //     blurOverlay.style.display = 'none';
+    // });
+
     $(".navAllMenu").hover(function () {
         blurOverlay.style.display = 'block';
         blurOverlay.style.opacity = '1';
@@ -6,12 +14,13 @@ $(document).ready(function () {
         blurOverlay.style.opacity = '0';
         blurOverlay.style.display = 'none';
     });
+    
 
-    $("#navbarNavHover").hover(function () {
-        document.getElementById('.carousel-hover').style.display = 'none';
-    }, function () {
-        document.getElementById('.carousel-hover').style.display = 'block';
-    });
+    // $("#navbarNavHover").hover(function () {
+    //     document.getElementById('.carousel-hover').style.display = 'none';
+    // }, function () {
+    //     document.getElementById('.carousel-hover').style.display = 'block';
+    // });
     
     // Tambahkan event listener untuk mengatur visibilitas tombol navigasi
     $('#carouselItem').on('slid.bs.carousel', function () {
@@ -56,9 +65,9 @@ $(document).ready(function () {
             $("#navLink4").removeAttr("href");
         } else {
             $("#navLink1").attr("href","whiteboard.html");
-            $("#navLink2").attr("href","whiteboard.html");
-            $("#navLink3").attr("href","whiteboard.html");
-            $("#navLink4").attr("href","whiteboard.html");
+            $("#navLink2").attr("href","webcam.html");
+            $("#navLink3").attr("href","videotron.html");
+            $("#navLink4").attr("href","display.html");
         }
     }
     
