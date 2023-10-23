@@ -63,11 +63,13 @@ $(document).ready(function () {
             $("#navLink2").removeAttr("href");
             $("#navLink3").removeAttr("href");
             $("#navLink4").removeAttr("href");
+            $("#navLink5").removeAttr("href");
         } else {
             $("#navLink1").attr("href","whiteboard.html");
             $("#navLink2").attr("href","webcam.html");
             $("#navLink3").attr("href","videotron.html");
             $("#navLink4").attr("href","display.html");
+            $("#navLink5").attr("href","#");
         }
     }
     
