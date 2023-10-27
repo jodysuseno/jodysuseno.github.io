@@ -55,16 +55,57 @@ $(document).ready(function () {
             e.preventDefault();
         }
     });
-    
-    window.addEventListener("resize", myFunction);
-    function myFunction() {
+
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+        console.log('mobile mode');
+        $("#navLink1").removeAttr("href");
+        $("#navLink2").removeAttr("href");
+        $("#navLink3").removeAttr("href");
+        $("#navLink4").removeAttr("href");
+        $("#navLink5").removeAttr("href");
+    } else {
+        console.log('dekstop mode');
+        $("#navLink1").attr("href","whiteboard.html");
+        $("#navLink2").attr("href","webcam.html");
+        $("#navLink3").attr("href","videotron.html");
+        $("#navLink4").attr("href","display.html");
+        $("#navLink5").attr("href","#");
+    }
+
+    if (window.innerWidth < 992) {
+        console.log('mobile mode');
+        $("#navLink1").removeAttr("href");
+        $("#navLink2").removeAttr("href");
+        $("#navLink3").removeAttr("href");
+        $("#navLink4").removeAttr("href");
+        $("#navLink5").removeAttr("href");
+    } else {
+        console.log('dekstop mode');
+        $("#navLink1").attr("href","whiteboard.html");
+        $("#navLink2").attr("href","webcam.html");
+        $("#navLink3").attr("href","videotron.html");
+        $("#navLink4").attr("href","display.html");
+        $("#navLink5").attr("href","#");
+    }
+
+    // change atribute link
+    window.addEventListener("resize", changeLinkMenu);
+    function changeLinkMenu() {
         if (window.innerWidth < 992) {
+            console.log('mobile mode');
             $("#navLink1").removeAttr("href");
             $("#navLink2").removeAttr("href");
             $("#navLink3").removeAttr("href");
             $("#navLink4").removeAttr("href");
             $("#navLink5").removeAttr("href");
         } else {
+            console.log('dekstop mode');
             $("#navLink1").attr("href","whiteboard.html");
             $("#navLink2").attr("href","webcam.html");
             $("#navLink3").attr("href","videotron.html");
